@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #155DFC;
+    --heavenly: #50A2FF;
+    --dark-blue: #202B4F;
+    --light-blue-1: #EFF6FF;
+    --light-blue-2: #E9EDF4;
+    --dark-grey: #6A7282;
+    --light-grey: #F9FAFB;
+    --white: #FFFFFF;
+    --black: #101828;
+    --yellow: #FFB900;
+    --blue-night: #102555;
+    --dark-night: #0F172B;
+    --light-black: #1B2336;
+    --dusty-black: #32394A;
+    --pure-black: #000000;
+
+
+}
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    color: var(--dark-grey);
+    background: var(--light-grey);
+}
+
+ /* Шапка сайта */
+.header {
+    padding: 16px 96px;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-img {
+    display: block;
+    width: 56px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 24px;
+}
+
+.menu a {
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--dark-grey);
+}
+
+.menu a:hover {
+    color: var(--heavenly);
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.first-screen {
+    padding: 100px 0 0 0;
+    background-image: url('/img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.first-screen .container {
+    max-width: 1100px;
+}
+
+.first-screen .text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--light-blue-2);
+    padding: 32px 0;
+    max-width: 75%;
+}
+
+.first-screen .buttons {
+    display: flex;
+    gap: 64px;
+    padding: 0 64px 64px;
+    border-bottom: solid 1px var(--dark-grey);
+}
+
+.first-screen .rates {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 48px 0;
+}
+
+.first-screen .rate {
+    gap: 8px;    
+    padding: 8px;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.rate span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-grey);
+}
+
+/* Наши услуги */
+.services {
+    padding: 0 32px 64px;
+    background-color: var(--light-grey);
+}
+
+.services .tiles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 64px;
+}
+
+.services .tiles .tile {
+    padding: 24px;
+    background-color: var(--white);
+    border: solid 1px var(--light-blue-2);
+    border-radius: 16px;
+}
+
+.services .tiles .tile .title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+    padding: 16px 0;
+}
+
+.services .tiles .tile .description {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Примеры наших работ */
+.portfolio {
+    padding: 0 32px 64px;
+    background-color: var(--white);
+}
+
+.portfolio .tiles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 64px;
+}
+
+.portfolio .top {
+    height: 285px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+    background-size: cover;
+    background-position: center;
+    border: solid 1px var(--light-blue-2);
+    border-radius: 16px 16px 0 0;
+}
+
+.portfolio-1 {
+    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/img/portfolio-1.jpg');
+}
+
+.portfolio-2 {
+    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/img/portfolio-2.jpg');
+}
+
+.portfolio-3 {
+    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/img/portfolio-3.jpg');
+}
+
+.portfolio .label {
+    width: fit-content;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.portfolio .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.portfolio .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border: solid 1px var(--light-blue-2);
+    border-radius: 0 0 16px 16px;
+}
+
+.portfolio .feature {
+    font-size: 20px;
+}
+
+.portfolio .value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* Как мы работаем */
+.how-it-works {
+    padding: 0 32px 64px;
+    background-color: var(--blue);
+}
+
+.how-it-works h2 {
+    color: var(--white);
+}
+
+.how-it-works h3 {
+    color: var(--heavenly);
+}
+
+.how-it-works .steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 64px;
+    padding-bottom: 40px;
+}
+
+.how-it-works .step {
+    text-align: center;
+}
+
+.how-it-works .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    padding: 16px 0;
+}
+
+.how-it-works .description {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.how-it-works .btn {
+    margin: 0 auto;
+}
+
+/* Отзывы клиентов */
+.feedback {
+    padding: 0 32px 64px;
+}
+
+.feedback .reviews {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 64px;
+}
+
+.feedback .review {
+    padding: 24px;
+    background-color: var(--white);
+    border: solid 2px var(--light-blue-2);
+    border-radius: 16px;
+}
+
+.feedback .text {
+    font-size: 24px;
+    padding: 16px 0;
+    border-bottom: solid 2px var(--light-blue-2);
+}
+
+.feedback .signature {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+    padding: 8px 0;
+}
+
+.feedback .signature span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-grey);
+}
+
+/* Часто задаваемые вопросы */
+.faq {
+    padding: 0 32px 64px;
+    background-color: var(--white);
+}
+
+.faq .accordion {
+    max-width: 1200px;
+    margin: 16px auto;
+    border: solid 1px var(--light-blue-2);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.faq .question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 16px;
+}
+
+.faq .answer {
+    font-size: 20px;
+}
+
+/* Контакты и форма */
+.contacts {
+    padding: 16px 32px 64px;
+    background-color: var(--dark-night);
+}
+
+.contacts .wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacts h2 {
+    font-size: 40px;
+    color: var(--white);
+    padding-top: 16px;
+    white-space: nowrap;
+}
+
+.contacts h3 {
+    font-size: 20px;
+    text-align: left;
+    color: var(--white);
+    padding-top: 16px;
+}
+
+.contacts .row {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+}
+
+.contacts .row span {
+    font-weight: 500;
+    display: block;
+    color: var(--white);
+}
+
+.contacts .quick-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 16px;
+    background-color: var(--light-black);
+    border: solid 1px var(--dark-grey);
+    border-radius: 16px;
+    margin: 0 16px;
+}
+
+.contacts .quick-form div {
+    padding: 16px 0 32px;
+}
+
+.contacts .quick-form button {
+    margin: 0 auto 16px;
+}
+
+.contacts .input, .contacts .textarea {
+    width: 100%;
+    font-size: 24px;
+    color: var(--dark-grey);
+    background-color: var(--dusty-black);
+    border: solid 1px var(--dark-grey);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.contacts input::placeholder, .contacts textarea::placeholder {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 24px;
+    color: var(--dark-grey);
+}
+
+.contacts .checkbox {
+    
+}
+
+.contacts a {
+    text-decoration: none;
+    color: var(--heavenly);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: var(--pure-black);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--heavenly);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.24;
+    color: var(--white);
+    max-width: 75%;
+}
+
+h1 span {
+    color: var(--heavenly);
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+    padding: 40px 0 16px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 0 40px;
+}
+
+/* Кнопки */
+.btn {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: 20px;
+    border-radius: 12px;
+    width: 440px;
+}
+
+.btn span {
+    align-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.primary-btn {
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+}
+
+.secondary-btn {
+    color: var(--blue);
+    background-color: var(--white);
+    border: none;
+}
+
+.tertiary-btn {
+    color: var(--white);
+    background-color: rgba(97,98,98,0.2);
+    border: solid 1px var(--dark-grey);
+}

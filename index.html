@@ -4,8 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Акабо - Сервис и ремонт вашего септика</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">
+                    <img src="/img/logo.png"
+                         alt="Сервис и ремонт ЛОС"
+                         class="logo-img">
+                    <p class="logo-text">
+                        Акабо
+                    </p>
+                </a>
+                
+                <ul class="menu">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#how-it-works">Как это работает</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                
+                <button id="call-us" class="btn primary-btn"><img src="/img/phone.svg"><span>+7 (967) 340-93-76</span></button>
+
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="first-screen">
+        <div class="container">
+            <h1>
+                Сервис и ремонт вашего септика<br><span>в срок и без ошибок</span>
+            </h1>
+            <p class="text">
+                Выезжаем на ваш объект, проводим диагностику, выполняем ремонт или сервис локальных очистных сооружений в день выезда. Онлайн-заявка — выезд за 48 часов.
+            </p>
+            <div class="buttons">
+                <button class="btn primary-btn" onClick="window.location.href='#'"><span>Создать заявку на выезд</span></button>
+                <button class="btn tertiary-btn"><span>Как это работает?</span></button>
+            </div>
+            <div class="rates">
+                <p class="rate">1400+<br><span>Сервисов выполнено</span></p>
+                <p class="rate">8 лет<br><span>На рынке</span></p>
+                <p class="rate">97%<br><span>Довольных клиентов</span></p>
+                <p class="rate">48 ч<br><span>Среднее время выезда</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2 id="services">
+            Наши услуги
+        </h2>
+        <h3>
+            Профессиональный ремонт и сервис локальных очистных сооружений любой конструкции
+        </h3>
+        <div class="tiles">
+            <div class="tile">
+                <img src="/img/drop.png">
+                <p class="title">Диагностика</p>
+                <p class="description">Тестирование всех компонентов вашего очистного сооружение и комплексная проверка функционирования.</p>
+            </div>
+            <div class="tile">
+                <img src="/img/drop.png">
+                <p class="title">Ремонт и апгрейд</p>
+                <p class="description">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
+            </div>
+            <div class="tile">
+                <img src="/img/drop.png">
+                <p class="title">Сервис</p>
+                <p class="description">Выполнение регламентных операций по очистке вашего септика, сезонная консервация и ввод в эксплуатацию.</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <h2 id="portfolio">
+            Примеры наших работ
+        </h2>
+        <h3>
+            Ремонт и обслуживание очистных сооружений на территории Ленинградской области
+        </h3>
+        <div class="tiles">
+            <div class="tile">
+                <div class="top portfolio-1">
+                    <p class="label">Сервис</p>
+                    <p class="title">Станция «Биодека-5», пос. Кирилловское</p>
+                </div>
+                <div class="bottom">
+                    <p class="feature">Стоимость работ</p>
+                    <p class="value">7&nbsp;500 руб.</p>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="top portfolio-2">
+                    <p class="label">Ремонт</p>
+                    <p class="title">Станция «Астра-5», пос. Синявино</p>
+                </div>
+                <div class="bottom">
+                    <p class="feature">Стоимость работ</p>
+                    <p class="value">25&nbsp;000 руб.</p>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="top portfolio-3">
+                    <p class="label">Диагностика</p>
+                    <p class="title">Станция «Аэробокс A230-5 Max 90», г. Тосно</p>
+                </div>
+                <div class="bottom">
+                    <p class="feature">Стоимость работ</p>
+                    <p class="value">4&nbsp;500 руб.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <h2 id="how-it-works">
+            Как мы работаем
+        </h2>
+        <h3>
+            Простой и прозрачный процесс от заявки до результата
+        </h3>
+        <div class="steps">
+            <div class="step">
+                <img src="/img/icon-01.png">
+                <p class="title">Заявка онлайн или по телефону</p>
+                <p class="description">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
+            </div>
+            <div class="step">
+                <img src="/img/icon-02.png">
+                <p class="title">Подтверждение</p>
+                <p class="description">Наш специалист свяжется с вами и подтвердит время визита.</p>
+            </div>
+            <div class="step">
+                <img src="/img/icon-03.png">
+                <p class="title">Выезд сервисного инженера</p>
+                <p class="description">Инженер приедет в согласованное время со всем оборудованием.</p>
+            </div>
+            <div class="step">
+                <img src="/img/icon-04.png">
+                <p class="title">Готовый результат</p>
+                <p class="description">Вы получаете рабочую систему в день приезда специалиста</p>
+            </div>
+        </div>
+        <button class="btn secondary-btn"><span>Создать заявку сейчас</span></button>
+    </section>
+    <section class="feedback">
+        <h2 id="feedback">
+            Отзывы клиентов
+        </h2>
+        <h3>
+            Что говорят о нас наши клиенты
+        </h3>
+        <div class="reviews">
+            <div class="review">
+                <img src="/img/rating-5.png">
+                <p class="text">
+                    «Работаем уже 3 года. Замерщики всегда приезжают вовремя, результаты точные. Очень удобный личный кабинет — видим статусы всех заказов в реальном времени».
+                </p>
+                <p class="signature">
+                    Алексей Иванов<br><span>Управляющий базой отдыха «Добрый лось»</span>
+                </p>
+            </div>
+            <div class="review">
+                <img src="/img/rating-5.png">
+                <p class="text">
+                    «Сотрудничаем по крупным объектам. Профессиональный подход, современное оборудование. Рекомендуем как надёжного партнёра».
+                </p>
+                <p class="signature">
+                    Марина Козлова<br><span>Владелец загородного дома в КП «Северная долина»</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <h2>
+            Часто задаваемые вопросы
+        </h2>
+        <h3>
+            Узнайте то, чем мы выгодно отличаемся от конкурентов
+        </h3>
+        <div class="accordion">
+            
+            <p class="question">
+                Как быстро приедет мастер?
+                <img src="/img/accordion-opened.png">
+            </p>
+            <p class="answer">
+                Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
+            </p>
+        </div>
+        <div class="accordion">
+            <p class="question">
+                Какая гарантия на работу?
+                <img src="/img/accordion-opened.png">
+            </p>
+            <p class="answer">
+                Гарантия на работу и оборудование составляет один год. 
+            </p>
+        </div>
+        <div class="accordion">
+            <p class="question">
+                Работаете ли вы с базами отдыха?
+                <img src="/img/accordion-opened.png">
+            </p>
+            <p class="answer">
+                Да, работаем. Есть возможность оплаты по безнальчному расчету. 
+            </p>
+        </div>
+        <div class="accordion">
+            <p class="question">
+                Работаете ли за пределами Ленинградской области?
+                <img src="/img/accordion-opened.png">
+            </p>
+            <p class="answer">
+                По договоренности возможен выезд в соседние регионы.
+            </p>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="wrapper">
+            <div>
+                <h2>Свяжитесь с нами</h2>
+                <h3>Готовы обсудить ваш проект и рассчитать стоимость выезда. Свяжитесь с нами удобным способом.</h3>
+                <div class="row">
+                    <img src="/img/icon-phone.png"><p>Телефон<span>+7 (967) 340-93-76</span></p>
+                </div>
+                <div class="row">
+                    <img src="/img/icon-email.png"><p>Email<span>zakaz@akabo.ru</span></p>
+                </div>
+                <div class="row">
+                    <img src="/img/icon-geo.png"><p>Адрес<span>г. Санкт-Петербург</span></p>
+                </div>
+                <div class="row">
+                    <img src="/img/icon-clock.png"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
+                </div>
+            </div>
+            <div class="quick-form">
+                <h2>Быстрая заявка</h2>
+                <form action="">
+                    <input class="input" placeholder="Ваше имя" required>
+                    <input class="input" name="phone" placeholder="Телефон" required>
+                    <input class="input" placeholder="Email">
+                    <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
+                    <div>
+                        <input class="checkbox" type="checkbox" required>
+                        <span>Принимаю <a href="/upload/privacy_policy.pdf">политику обработки персональных данных</a></span>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <p class="text">
+                © 2020-26 Акабо
+            </p>
+            <p class="text">
+                Сделано в студии <a href="https://ospreylab.ru">ospreylab</a>
+            </p>      
+    </footer>
 </body>
 </html>
