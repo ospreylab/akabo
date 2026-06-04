@@ -282,7 +282,7 @@
 
     <div class="overlay" id="simpleOverlay"></div>
     <div class="modal" id="simpleModal">
-        <?php if(isset($_GET['result']) && $_GET['result'] == 'sucess'): ?>
+        <?php if (isset($_GET['result']) && $_GET['result'] == 'sucсess'): ?>
             <h2>Ваша заявка принята!</h2>
             <p>Мы свяжемся с вами в ближайшее время.</p>
         <?php else:?>
@@ -292,9 +292,11 @@
         <button class="btn primary-btn" onclick="closeModal()">Закрыть</button>
     </div>
 
-    <script src="assets/script.js">
-        <?php if(isset($_GET['result'])): ?>
+    <script src="assets/script.js"></script>
+    <script>
+        <?php if (isset($_GET['result'])): ?>
             openModal();
+            console.log('Hello');
         <?php endif; ?>
     </script>
 </body>

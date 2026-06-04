@@ -8,7 +8,7 @@ if (!empty($_POST)) {
     if (isset($_POST['task'])) $message .= "\nЗадача: {$_POST['task']}";
 
     if (mail($to, $subject, $message)) {
-        header("Location: https://akabo.ru/index.php?result=sucess");
+        header("Location: https://akabo.ru/index.php?result=sucсess");
     } else {
         header("Location: https://akabo.ru/index.php?result=fail");
     }
