@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Акабо - Сервис и ремонт вашего септика</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/style.css" type="text/css" media="screen, projection">
 </head>
 <body>
     <header class="header">
@@ -279,5 +279,23 @@
                 Сделано в студии <a class="text-link" href="https://ospreylab.ru">ospreylab</a>
             </p>      
     </footer>
+
+    <div class="overlay" id="simpleOverlay"></div>
+    <div class="modal" id="simpleModal">
+        <?php if(isset($_GET['result']) && $_GET['result'] == 'sucess'): ?>
+            <h2>Ваша заявка принята!</h2>
+            <p>Мы свяжемся с вами в ближайшее время.</p>
+        <?php else:?>
+            <h2>Ошибка отправки</h2>
+            <p>Пожалуста, свяжитесь с нами <a class="text-link" href="tel:+79673409376">+7 (967) 340-93-76</a></p>
+        <?php endif; ?>
+        <button class="btn primary-btn" onclick="closeSimpleModal()">Закрыть</button>
+    </div>
+
+    <script src="assets/script.js">
+        <?php if(isset($_GET['result'])): ?>
+            openModal();
+        <?php endif; ?>
+    </script>
 </body>
 </html>
