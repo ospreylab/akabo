@@ -289,7 +289,7 @@
             <h2>Ошибка отправки</h2>
             <p>Пожалуста, свяжитесь с нами <a class="text-link" href="tel:+79673409376">+7 (967) 340-93-76</a></p>
         <?php endif; ?>
-        <button class="btn primary-btn" onclick="closeSimpleModal()">Закрыть</button>
+        <button class="btn primary-btn" onclick="closeModal()">Закрыть</button>
     </div>
 
     <script src="assets/script.js">
