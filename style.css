@@ -42,27 +42,21 @@ body {
     background: var(--light-grey);
 }
 
- /* Шапка сайта */
+ /* Шапка */
+
 .header {
-    padding: 16px 96px;
+    padding: 16px 24px;
     background-color: var(--white);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Навигация */
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .logo {
@@ -92,14 +86,16 @@ body {
 }
 
 .menu a {
-    text-decoration: none;
     white-space: nowrap;
-    font-weight: 500;
     color: var(--dark-grey);
 }
 
 .menu a:hover {
     color: var(--heavenly);
+}
+
+.header .btn {
+    width: fit-content;
 }
 
 .burger {
@@ -116,29 +112,39 @@ body {
     transition: 0.3s;
 }
 
+/* Первый экран */
+
 .first-screen {
-    padding: 100px 0 0 0;
-    background-image: url('/img/background.png');
+    background-image: url('/img/background.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .first-screen .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px 0;
+}
+
+#call-us-mobile {
+    font-size: 24px;
+    display: none;
 }
 
 .first-screen .text {
     font-size: 20px;
     line-height: 1.6;
     color: var(--light-blue-2);
-    padding: 32px 0;
     max-width: 75%;
 }
 
 .first-screen .buttons {
     display: flex;
     gap: 64px;
-    padding: 0 64px 64px;
+    padding: 32px 64px 64px;
     border-bottom: solid 1px var(--dark-grey);
 }
 
@@ -156,13 +162,14 @@ body {
     color: var(--white);
 }
 
-.rate span {
+.first-screen .rate span {
     font-size: 20px;
     font-weight: 500;
     color: var(--dark-grey);
 }
 
 /* Наши услуги */
+
 .services {
     padding: 0 32px 64px;
     background-color: var(--light-grey);
@@ -174,26 +181,32 @@ body {
     gap: 64px;
 }
 
-.services .tiles .tile {
+.services .tile {
     padding: 24px;
     background-color: var(--white);
     border: solid 1px var(--light-blue-2);
     border-radius: 16px;
 }
 
-.services .tiles .tile .title {
+.services .tile img {
+    width: 64px;
+    height: auto;
+}
+
+.services .tile .title {
     font-size: 40px;
     font-weight: 700;
     color: var(--black);
     padding: 16px 0;
 }
 
-.services .tiles .tile .description {
+.services .tile .description {
     font-size: 20px;
     line-height: 1.4;
 }
 
 /* Примеры наших работ */
+
 .portfolio {
     padding: 0 32px 64px;
     background-color: var(--white);
@@ -264,6 +277,7 @@ body {
 }
 
 /* Как мы работаем */
+
 .how-it-works {
     padding: 0 32px 64px;
     background-color: var(--blue);
@@ -288,6 +302,10 @@ body {
     text-align: center;
 }
 
+.how-it-works .step img {
+    width: 96px;
+}
+
 .how-it-works .title {
     font-size: 20px;
     font-weight: 700;
@@ -305,6 +323,7 @@ body {
 }
 
 /* Отзывы клиентов */
+
 .feedback {
     padding: 0 32px 64px;
 }
@@ -320,6 +339,11 @@ body {
     background-color: var(--white);
     border: solid 2px var(--light-blue-2);
     border-radius: 16px;
+}
+
+.feedback .review img {
+    width: 176px;
+    height:  auto;
 }
 
 .feedback .text {
@@ -342,6 +366,7 @@ body {
 }
 
 /* Часто задаваемые вопросы */
+
 .faq {
     padding: 0 32px 64px;
     background-color: var(--white);
@@ -355,9 +380,15 @@ body {
     padding: 24px;
 }
 
+.faq .accordion img {
+    width: 36px;
+    height: auto;
+}
+
 .faq .question {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     font-size: 20px;
     font-weight: 700;
     color: var(--black);
@@ -369,6 +400,7 @@ body {
 }
 
 /* Контакты и форма */
+
 .contacts {
     padding: 16px 32px 64px;
     background-color: var(--dark-night);
@@ -391,7 +423,7 @@ body {
     font-size: 20px;
     text-align: left;
     color: var(--white);
-    padding-top: 16px;
+    padding: 0;
 }
 
 .contacts .row {
@@ -399,8 +431,14 @@ body {
     font-weight: 700;
     line-height: 1.6;
     display: flex;
+    align-items: flex-start;
     gap: 16px;
-    margin: 12px 0;
+    margin: 24px 0;
+}
+
+.contacts .row img {
+    width: 64px;
+    height: auto;
 }
 
 .contacts .row span {
@@ -413,7 +451,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 16px 16px;
+    padding: 16px;
     background-color: var(--light-black);
     border: solid 1px var(--dark-grey);
     border-radius: 16px;
@@ -449,20 +487,15 @@ body {
     
 }
 
-.contacts a {
-    text-decoration: none;
-    color: var(--heavenly);
-}
-
 /* Footer */
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     padding: 32px;
     background-color: var(--pure-black);
 }
 
-footer a {
+a {
     text-decoration: none;
     color: var(--heavenly);
 }
@@ -496,13 +529,14 @@ h3 {
 
 /* Кнопки */
 .btn {
+    font-size: 20px;
+    width: 440px;
     display: flex;
     gap: 16px;
     justify-content: center;
     padding: 16px 32px;
-    font-size: 20px;
     border-radius: 12px;
-    width: 440px;
+    cursor: pointer;
 }
 
 .btn span {
@@ -528,4 +562,294 @@ h3 {
     color: var(--white);
     background-color: rgba(97,98,98,0.2);
     border: solid 1px var(--dark-grey);
+}
+
+.quaternary-btn {
+    color: var(--heavenly);
+    background-color: rgba(80,162,255,0.2);
+    border: solid 1px var(--heavenly);
+}
+
+/* Мобильная версия */
+
+@media (max-width: 560px) {
+    
+    /* Шапка */
+    
+    .nav {
+        justify-content: space-between;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo-img {
+        width: 32px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .menu, #call-us {
+        display: none;
+    }
+    
+    .burger, #call-us-mobile {
+        display: flex;
+    }
+
+    /* Первый экран */
+    
+    .first-screen .container {
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .first-screen .text {
+        font-size: 15px;
+    }
+
+    .first-screen .buttons {
+        flex-direction: column;
+        gap: 16px;
+        padding: 8px 0 24px;
+    }
+
+    .first-screen .rates {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0;
+    }
+
+    .first-screen .rate {
+        gap: 8px;
+        padding: 8px;
+        font-size: 24px;
+    }
+
+    .first-screen .rate span {
+        font-size: 12px;
+    }
+
+    /* Наши услуги */
+
+    .services {
+        padding: 0 16px 32px;
+    }
+
+    .services .tiles {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .services .tile img {
+        width: 48px;
+    }
+
+    .services .tile {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .services .tile .title {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .services .tile .description {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* Примеры наших работ */
+
+    .portfolio {
+        padding: 0 16px 32px;
+    }
+
+    .portfolio .tiles {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .portfolio .top {
+        height: 180px;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .portfolio .label {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 8px;
+    }
+
+    .portfolio .title {
+        font-size: 14px;
+    }
+
+    .portfolio .bottom {
+        padding: 12px 16px;
+    }
+
+    .portfolio .feature {
+        font-size: 14px;
+    }
+
+    .portfolio .value {
+        font-size: 14px;
+    }
+
+    /* Как мы работаем */
+
+    .how-it-works {
+        padding: 0 16px 32px;
+    }
+
+    .how-it-works .steps {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 32px;
+        padding-bottom: 32px;
+    }
+
+    .how-it-works .step {
+        text-align: left;
+    }
+
+    .how-it-works .step img {
+        width: 48px;
+    }
+
+    .how-it-works .title {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .how-it-works .description {
+        font-size: 13px;
+    }
+
+    /* Отзывы клиентов */
+
+    .feedback {
+        padding: 0 16px 32px;
+    }
+
+    .feedback .reviews {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .feedback .review {
+        padding: 16px;
+    }
+
+    .feedback .review img {
+        width: 96px;
+    }
+
+    .feedback .text {
+        font-size: 13px;
+        padding: 16px 0;
+    }
+
+    .feedback .signature {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .feedback .signature span {
+        font-size: 12px;
+    }
+
+    /* Часто задаваемые вопросы */
+
+    .faq {
+        padding: 0 16px 32px;
+    }
+
+    .faq .accordion {
+        margin: 16px auto;
+        padding: 16px;
+    }
+
+    .faq .question {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .faq .answer {
+        font-size: 12px;
+    }
+
+    /* Контакты и форма */
+
+    .contacts {
+        padding: 8px 16px 32px;
+    }
+
+    .contacts .wrapper {
+        flex-direction: column;
+    }
+
+    .contacts h2 {
+        font-size: 20px;
+        padding-top: 8px;
+    }
+
+    .contacts h3 {
+        font-size: 12px;
+    }
+
+    .contacts .row {
+        font-size: 12px;
+        gap: 16px;
+        margin: 16px 0;
+    }
+
+    .contacts .row img {
+        width: 48px;
+    }
+
+    .contacts .row span {
+        padding-top: 8px;
+    }
+
+    .contacts .quick-form {
+        margin: 0;
+    }
+
+    .contacts .input, .contacts .textarea {
+        font-size: 18px;
+    }
+
+    .contacts input::placeholder, .contacts textarea::placeholder {
+        font-size: 18px;
+    }
+
+    /* Footer */
+
+    .footer {
+        font-size: 12px;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 18px;
+    }
 }
