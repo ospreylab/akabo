@@ -24,7 +24,11 @@
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
             
-            <button id="call-us" class="btn primary-btn"><img src="/img/phone-1.svg"><span>+7 (967) 340-93-76</span></button>
+            <a href="tel:+79673409376">
+                <button type="button" id="call-us" class="btn primary-btn">
+                    <img src="/img/phone-1.svg">+7 (967) 340-93-76
+                </button>
+            </a>
 
             <div class="burger">
                 <img src="/img/menu-closed.png">
@@ -33,7 +37,11 @@
     </header>
     <section class="first-screen">
         <div class="container">
-            <button id="call-us-mobile" class="btn quaternary-btn"><img src="/img/phone-2.svg"><span>+7 (967) 340-93-76</span></button>
+            <a href="tel:+79673409376">
+                <button type="button" id="call-us-mobile" class="btn quaternary-btn">
+                    <img src="/img/phone-2.svg">+7 (967) 340-93-76
+                </button>
+            </a>
             <h1>
                 Сервис и ремонт вашего септика<br><span>в срок и без ошибок</span>
             </h1>
@@ -41,9 +49,14 @@
                 Выезжаем на ваш объект, проводим диагностику, выполняем ремонт или сервис локальных очистных сооружений в день выезда. Онлайн-заявка — выезд за 48 часов.
             </p>
             <div class="buttons">
-                <button class="btn primary-btn" onClick="window.location.href='#'"><span>Создать заявку на выезд</span></button>
-                <button class="btn tertiary-btn"><span>Как это работает?</span></button>
+                <a href="#contacts">
+                    <button type="button" class="btn primary-btn">Создать заявку на выезд</button>
+                </a>
+                <a href="#how-it-works">
+                    <button type="button" class="btn tertiary-btn">Как это работает?</button>
+                </a>
             </div>
+
             <div class="rates">
                 <p class="rate">1400+<br><span>Сервисов выполнено</span></p>
                 <p class="rate">8 лет<br><span>На рынке</span></p>
@@ -146,7 +159,10 @@
                 <p class="description">Вы получаете рабочую систему в день приезда специалиста</p>
             </div>
         </div>
-        <button class="btn secondary-btn"><span>Создать заявку сейчас</span></button>
+
+        <a href="#contacts">
+            <button type="button" class="btn secondary-btn">Создать заявку сейчас</button>
+        </a>
     </section>
     <section class="feedback">
         <h2 id="feedback">
@@ -241,14 +257,14 @@
             </div>
             <div class="quick-form">
                 <h2>Быстрая заявка</h2>
-                <form action="">
-                    <input class="input" placeholder="Ваше имя" required>
+                <form action="/submit_form.php" method="POST" enctype="multipart/form-data">
+                    <input class="input" name="customer" placeholder="Ваше имя" required>
                     <input class="input" name="phone" placeholder="Телефон" required>
-                    <input class="input" placeholder="Email">
+                    <input class="input" name="email" placeholder="Email">
                     <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
                     <div>
                         <input class="checkbox" type="checkbox" required>
-                        <span>Принимаю <a href="/upload/privacy_policy.pdf">политику обработки персональных данных</a></span>
+                        <span>Принимаю <a class="text-link" href="/upload/privacy_policy.pdf">политику обработки персональных данных</a></span>
                     </div>
                     <button type="submit" class="btn primary-btn">Отправить заявку</button>
                 </form>
@@ -260,7 +276,7 @@
                 © 2020-26 Акабо
             </p>
             <p class="text">
-                Сделано в студии <a href="https://ospreylab.ru">ospreylab</a>
+                Сделано в студии <a class="text-link" href="https://ospreylab.ru">ospreylab</a>
             </p>      
     </footer>
 </body>
