@@ -30,9 +30,11 @@
             
             <ul class="menu">
                 <li><a href="#services">Услуги</a></li>
+                <li><a href="#price">Цены</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
                 <li><a href="#how-it-works">Как это работает</a></li>
                 <li><a href="#feedback">Отзывы</a></li>
+                <li><a href="#coupon">Промокод</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
@@ -48,242 +50,295 @@
             </div>
         </nav>
     </header>
-    <section class="first-screen">
-        <div class="container">
-            <a href="tel:+79673409376">
-                <button type="button" id="call-us-mobile" class="btn quaternary-btn">
-                    <img src="/img/phone-2.svg">+7 (967) 340-93-76
-                </button>
-            </a>
-            <h1>
-                Сервис и ремонт вашего септика<br><span>в срок и без ошибок</span>
-            </h1>
-            <p class="text">
-                Выезжаем на ваш объект, проводим диагностику, выполняем ремонт или сервис локальных очистных сооружений в день выезда. Онлайн-заявка — выезд за 48 часов.
-            </p>
-            <div class="buttons">
-                <a href="#contacts">
-                    <button type="button" class="btn primary-btn">Создать заявку на выезд</button>
+    <main>
+        <section class="first-screen">
+            <div class="container">
+                <a href="tel:+79673409376">
+                    <button type="button" id="call-us-mobile" class="btn quaternary-btn">
+                        <img src="/img/phone-2.svg">+7 (967) 340-93-76
+                    </button>
                 </a>
-                <a href="#how-it-works">
-                    <button type="button" class="btn tertiary-btn">Как это работает?</button>
-                </a>
-            </div>
-
-            <div class="rates">
-                <p class="rate">1400+<br><span>Сервисов выполнено</span></p>
-                <p class="rate">8 лет<br><span>На рынке</span></p>
-                <p class="rate">97%<br><span>Довольных клиентов</span></p>
-                <p class="rate">48 ч<br><span>Среднее время выезда</span></p>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <h2 id="services">
-            Наши услуги
-        </h2>
-        <h3>
-            Профессиональный ремонт и сервис локальных очистных сооружений любой конструкции
-        </h3>
-        <div class="tiles">
-            <div class="tile">
-                <img src="/img/drop.png">
-                <p class="title">Диагностика</p>
-                <p class="description">Тестирование всех компонентов вашего очистного сооружение и комплексная проверка функционирования.</p>
-            </div>
-            <div class="tile">
-                <img src="/img/drop.png">
-                <p class="title">Ремонт и апгрейд</p>
-                <p class="description">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
-            </div>
-            <div class="tile">
-                <img src="/img/drop.png">
-                <p class="title">Сервис</p>
-                <p class="description">Выполнение регламентных операций по очистке вашего септика, сезонная консервация и ввод в эксплуатацию.</p>
-            </div>
-        </div>
-    </section>
-    <section class="portfolio">
-        <h2 id="portfolio">
-            Примеры наших работ
-        </h2>
-        <h3>
-            Ремонт и обслуживание очистных сооружений на территории Ленинградской области
-        </h3>
-        <div class="tiles">
-            <div class="tile">
-                <div class="top portfolio-1">
-                    <p class="label">Сервис</p>
-                    <p class="title">Станция «Биодека-5», пос. Кирилловское</p>
-                </div>
-                <div class="bottom">
-                    <p class="feature">Стоимость работ</p>
-                    <p class="value">7&nbsp;500 руб.</p>
-                </div>
-            </div>
-            <div class="tile">
-                <div class="top portfolio-2">
-                    <p class="label">Ремонт</p>
-                    <p class="title">Станция «Астра-5», пос. Синявино</p>
-                </div>
-                <div class="bottom">
-                    <p class="feature">Стоимость работ</p>
-                    <p class="value">25&nbsp;000 руб.</p>
-                </div>
-            </div>
-            <div class="tile">
-                <div class="top portfolio-3">
-                    <p class="label">Диагностика</p>
-                    <p class="title">Станция «Аэробокс A230-5 Max 90», г. Тосно</p>
-                </div>
-                <div class="bottom">
-                    <p class="feature">Стоимость работ</p>
-                    <p class="value">4&nbsp;500 руб.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="how-it-works">
-        <h2 id="how-it-works">
-            Как мы работаем
-        </h2>
-        <h3>
-            Простой и прозрачный процесс от заявки до результата
-        </h3>
-        <div class="steps">
-            <div class="step">
-                <img src="/img/icon-01.png">
-                <p class="title">Заявка онлайн или по телефону</p>
-                <p class="description">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
-            </div>
-            <div class="step">
-                <img src="/img/icon-02.png">
-                <p class="title">Подтверждение</p>
-                <p class="description">Наш специалист свяжется с вами и подтвердит время визита.</p>
-            </div>
-            <div class="step">
-                <img src="/img/icon-03.png">
-                <p class="title">Выезд сервисного инженера</p>
-                <p class="description">Инженер приедет в согласованное время со всем оборудованием.</p>
-            </div>
-            <div class="step">
-                <img src="/img/icon-04.png">
-                <p class="title">Готовый результат</p>
-                <p class="description">Вы получаете рабочую систему в день приезда специалиста</p>
-            </div>
-        </div>
-
-        <a href="#contacts">
-            <button type="button" class="btn secondary-btn">Создать заявку сейчас</button>
-        </a>
-    </section>
-    <section class="feedback">
-        <h2 id="feedback">
-            Отзывы клиентов
-        </h2>
-        <h3>
-            Что говорят о нас наши клиенты
-        </h3>
-        <div class="reviews">
-            <div class="review">
-                <img src="/img/rating-5.png">
+                <h1>
+                    Сервис и ремонт вашего септика<br><span>в срок и без ошибок</span>
+                </h1>
                 <p class="text">
-                    «Сотрудничаем более трёх лет. Мастера всегда приезжают вовремя. Нареканий по работе станций после обслуживания нет. В случае возникновения аварийной ситуации реагируют оперативно».
+                    Выезжаем на ваш объект, проводим диагностику, выполняем ремонт или сервис локальных очистных сооружений в день выезда. Онлайн-заявка – выезд за 48 часов.
                 </p>
-                <p class="signature">
-                    Алексей Субботин<br><span>Управляющий базой отдыха «Заозерье»</span>
-                </p>
-            </div>
-            <div class="review">
-                <img src="/img/rating-5.png">
-                <p class="text">
-                    «Заказываю регулярное обслуживание септика у этих мастеров. Бережно относятся к участку и мои насаждениям. Дают полезные советы по эксплуатации станции. Рекомендую как надёжного партнера!».
-                </p>
-                <p class="signature">
-                    Марина Разумовская<br><span>Владелец загородного дома в КП «Северная долина»</span>
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="faq">
-        <h2>
-            Часто задаваемые вопросы
-        </h2>
-        <h3>
-            Узнайте то, чем мы выгодно отличаемся от конкурентов
-        </h3>
-        <div class="accordion">
-            
-            <p class="question">
-                Как быстро приедет мастер?
-                <img src="/img/accordion-opened.png">
-            </p>
-            <p class="answer">
-                Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
-            </p>
-        </div>
-        <div class="accordion">
-            <p class="question">
-                Какая гарантия на работу?
-                <img src="/img/accordion-opened.png">
-            </p>
-            <p class="answer">
-                Гарантия на работу и оборудование составляет один год. 
-            </p>
-        </div>
-        <div class="accordion">
-            <p class="question">
-                Работаете ли вы с базами отдыха?
-                <img src="/img/accordion-opened.png">
-            </p>
-            <p class="answer">
-                Да, работаем. Есть возможность оплаты по безнальчному расчету. 
-            </p>
-        </div>
-        <div class="accordion">
-            <p class="question">
-                Работаете ли за пределами Ленинградской области?
-                <img src="/img/accordion-opened.png">
-            </p>
-            <p class="answer">
-                По договоренности возможен выезд в соседние регионы.
-            </p>
-        </div>
-    </section>
-    <section id="contacts" class="contacts">
-        <div class="wrapper">
-            <div>
-                <h2>Свяжитесь с нами</h2>
-                <h3>Готовы обсудить ваш проект и рассчитать стоимость выезда. Свяжитесь с нами удобным способом.</h3>
-                <div class="row">
-                    <img src="/img/icon-phone.png"><p>Телефон<span>+7 (967) 340-93-76</span></p>
+                <div class="buttons">
+                    <a href="#contacts">
+                        <button type="button" class="btn primary-btn">Создать заявку на выезд</button>
+                    </a>
+                    <a href="#how-it-works">
+                        <button type="button" class="btn tertiary-btn">Как это работает?</button>
+                    </a>
                 </div>
-                <div class="row">
-                    <img src="/img/icon-email.png"><p>Email<span>zakaz@akabo.ru</span></p>
-                </div>
-                <div class="row">
-                    <img src="/img/icon-geo.png"><p>Адрес<span>г. Санкт-Петербург</span></p>
-                </div>
-                <div class="row">
-                    <img src="/img/icon-clock.png"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
+
+                <div class="rates">
+                    <p class="rate">1400+<br><span>Сервисов выполнено</span></p>
+                    <p class="rate">8 лет<br><span>На рынке</span></p>
+                    <p class="rate">97%<br><span>Довольных клиентов</span></p>
+                    <p class="rate">48 ч<br><span>Среднее время выезда</span></p>
                 </div>
             </div>
-            <div class="quick-form">
-                <h2>Быстрая заявка</h2>
-                <form action="/submit_form.php" method="POST" enctype="multipart/form-data">
-                    <input class="input" name="customer" placeholder="Ваше имя" required>
-                    <input class="input" name="phone" placeholder="Телефон" required>
-                    <input class="input" name="email" placeholder="Email">
-                    <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
-                    <div>
-                        <input class="checkbox" type="checkbox" required>
-                        <span>Я согласен(-на) на обработку <a class="text-link" href="/upload/pdp_agreement.pdf">персональных данных</a></span>
+        </section>
+        <section class="services">
+            <h2 id="services">
+                Наши услуги
+            </h2>
+            <h3>
+                Профессиональный ремонт и сервис локальных очистных сооружений любой конструкции
+            </h3>
+            <div class="tiles">
+                <div class="tile">
+                    <img src="/img/drop.png">
+                    <p class="title">Диагностика</p>
+                    <p class="description">Тестирование всех компонентов вашего очистного сооружение и комплексная проверка функционирования.</p>
+                </div>
+                <div class="tile">
+                    <img src="/img/drop.png">
+                    <p class="title">Ремонт и апгрейд</p>
+                    <p class="description">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
+                </div>
+                <div class="tile">
+                    <img src="/img/drop.png">
+                    <p class="title">Сервис</p>
+                    <p class="description">Выполнение регламентных операций по очистке вашего септика, сезонная консервация и ввод в эксплуатацию.</p>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <h2 id="price">
+                Цены на сервис
+            </h2>
+            <h3>
+                Пожалуй, самое привлекательное предложение в Ленинградской области
+            </h3>
+            <table id="table-wide">
+                <tr class="row-0">
+                    <th class="tl">Размер станции</th><th>Количество человек</th><th>до 50 км от КАД</th><th>50–150 км</th><th class="tr">150–250 км</th>
+                </tr>
+                <tr class="row-1">
+                    <td>Стандарт</td><td>3–8</td><td><b>6&nbsp;500&nbsp;руб.</b></td><td><b>7&nbsp;500&nbsp;руб.</b></td><td><b>9&nbsp;000&nbsp;руб.</b></td>
+                </tr>
+                <tr class="row-2">
+                    <td>Стандарт</td><td>9–12</td><td><b>7&nbsp;000&nbsp;руб.</b></td><td><b>8&nbsp;000&nbsp;руб.</b></td><td><b>9&nbsp;500&nbsp;руб.</b></td>
+                </tr>
+                <tr class="row-1">
+                    <td>Удлиненная</td><td>3–8</td><td><b>7&nbsp;500&nbsp;руб.</b></td><td><b>8&nbsp;500&nbsp;руб.</b></td><td><b>10&nbsp;000&nbsp;руб.</b></td>
+                </tr>
+                <tr class="row-2">
+                    <td>Удлиненная</td><td>9–12</td><td><b>8&nbsp;000&nbsp;руб.</b></td><td><b>9&nbsp;000&nbsp;руб.</b></td><td><b>10&nbsp;500&nbsp;руб.</b></td>
+                </tr>
+                <tr class="row-3">
+                    <td class="bl br" colspan=5>Вызов ассенизаторской машины оплачивается отдельно</td>
+                </tr>
+            </table>
+            <table id="table-narrow">
+                <tr class="row-0">
+                    <th class="tl">Размер станции</th><th>Кол-во чел.</th><th class="tr">Стоимость, руб.</th>
+                </tr>
+                <tr class="row-1">
+                    <td>Стандарт</td><td>3–8</td><td><b>6&nbsp;500*</b></td>
+                </tr>
+                <tr class="row-2">
+                    <td>Стандарт</td><td>9–12</td><td><b>7&nbsp;000*</b></td>
+                </tr>
+                <tr class="row-1">
+                    <td>Удлиненная</td><td>3–8</td><td><b>7&nbsp;500*</b></td>
+                </tr>
+                <tr class="row-2">
+                    <td>Удлиненная</td><td>9–12</td><td><b>8&nbsp;000*</b></td>
+                </tr>
+                <tr class="row-3">
+                    <td class="bl br" colspan=3>Вызов ассенизаторской машины оплачивается отдельно</td>
+                </tr>
+            </table>
+            <p class="notification">
+                * в стоимость входит выезд мастера (до 50 км от КАД), далее +500 руб. за каждые дополнительные 50 км
+            </p>
+        </section>
+        <section class="portfolio">
+            <h2 id="portfolio">
+                Примеры наших работ
+            </h2>
+            <h3>
+                Ремонт и обслуживание очистных сооружений на территории Ленинградской области
+            </h3>
+            <div class="tiles">
+                <div class="tile">
+                    <div class="top portfolio-1">
+                        <p class="label">Сервис</p>
+                        <p class="title">Станция «Биодека-5», пос. Кирилловское</p>
                     </div>
-                    <button type="submit" class="btn primary-btn">Отправить заявку</button>
-                </form>
+                    <div class="bottom">
+                        <p class="feature">Стоимость работ</p>
+                        <p class="value">7&nbsp;500 руб.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="top portfolio-2">
+                        <p class="label">Ремонт</p>
+                        <p class="title">Станция «Астра-5», пос. Синявино</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="feature">Стоимость работ</p>
+                        <p class="value">25&nbsp;000 руб.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="top portfolio-3">
+                        <p class="label">Диагностика</p>
+                        <p class="title">Станция «Аэробокс A230-5 Max 90», г. Тосно</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="feature">Стоимость работ</p>
+                        <p class="value">4&nbsp;500 руб.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="how-it-works">
+            <h2 id="how-it-works">
+                Как это работает
+            </h2>
+            <h3>
+                Простой и прозрачный процесс от заявки до результата
+            </h3>
+            <div class="steps">
+                <div class="step">
+                    <img src="/img/icon-01.png">
+                    <p class="title">Заявка онлайн или по телефону</p>
+                    <p class="description">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
+                </div>
+                <div class="step">
+                    <img src="/img/icon-02.png">
+                    <p class="title">Подтверждение</p>
+                    <p class="description">Наш специалист свяжется с вами и подтвердит время визита.</p>
+                </div>
+                <div class="step">
+                    <img src="/img/icon-03.png">
+                    <p class="title">Выезд сервисного инженера</p>
+                    <p class="description">Инженер приедет в согласованное время со всем оборудованием.</p>
+                </div>
+                <div class="step">
+                    <img src="/img/icon-04.png">
+                    <p class="title">Готовый результат</p>
+                    <p class="description">Вы получаете рабочую систему в день приезда специалиста</p>
+                </div>
+            </div>
+
+            <a href="#contacts">
+                <button type="button" class="btn secondary-btn">Создать заявку сейчас</button>
+            </a>
+        </section>
+        <section class="feedback">
+            <h2 id="feedback">
+                Отзывы клиентов
+            </h2>
+            <h3>
+                Что говорят о нас наши клиенты
+            </h3>
+            <div class="reviews">
+                <div class="review">
+                    <img src="/img/rating-5.png">
+                    <p class="text">
+                        «Сотрудничаем более трёх лет. Мастера всегда приезжают вовремя. Нареканий по работе станций после обслуживания нет. В случае возникновения аварийной ситуации реагируют оперативно».
+                    </p>
+                    <p class="signature">
+                        Алексей Субботин<br><span>Управляющий базой отдыха «Заозерье»</span>
+                    </p>
+                </div>
+                <div class="review">
+                    <img src="/img/rating-5.png">
+                    <p class="text">
+                        «Заказываю регулярное обслуживание септика у этих мастеров. Бережно относятся к участку и мои насаждениям. Дают полезные советы по эксплуатации станции. Рекомендую как надёжного партнера!».
+                    </p>
+                    <p class="signature">
+                        Марина Разумовская<br><span>Владелец загородного дома в КП «Северная долина»</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <h2>
+                Часто задаваемые вопросы
+            </h2>
+            <h3>
+                Узнайте то, чем мы выгодно отличаемся от конкурентов
+            </h3>
+            <div class="accordion">
+                
+                <p class="question">
+                    Как быстро приедет мастер?
+                    <img src="/img/accordion-opened.png">
+                </p>
+                <p class="answer">
+                    Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
+                </p>
+            </div>
+            <div class="accordion">
+                <p class="question">
+                    Какая гарантия на работу?
+                    <img src="/img/accordion-opened.png">
+                </p>
+                <p class="answer">
+                    Гарантия на работу и оборудование составляет один год. 
+                </p>
+            </div>
+            <div class="accordion">
+                <p class="question">
+                    Работаете ли вы с базами отдыха?
+                    <img src="/img/accordion-opened.png">
+                </p>
+                <p class="answer">
+                    Да, работаем. Есть возможность оплаты по безнальчному расчету. 
+                </p>
+            </div>
+            <div class="accordion">
+                <p class="question">
+                    Работаете ли за пределами Ленинградской области?
+                    <img src="/img/accordion-opened.png">
+                </p>
+                <p class="answer">
+                    По договоренности возможен выезд в соседние регионы.
+                </p>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="wrapper">
+                <div>
+                    <h2>Свяжитесь с нами</h2>
+                    <h3>Готовы обсудить ваш проект и рассчитать стоимость выезда. Свяжитесь с нами удобным способом.</h3>
+                    <div class="row">
+                        <img src="/img/icon-phone.png"><p>Телефон<span>+7 (967) 340-93-76</span></p>
+                    </div>
+                    <div class="row">
+                        <img src="/img/icon-email.png"><p>Email<span>zakaz@akabo.ru</span></p>
+                    </div>
+                    <div class="row">
+                        <img src="/img/icon-geo.png"><p>Адрес<span>г. Санкт-Петербург</span></p>
+                    </div>
+                    <div class="row">
+                        <img src="/img/icon-clock.png"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
+                    </div>
+                </div>
+                <div class="quick-form">
+                    <h2>Быстрая заявка</h2>
+                    <form action="/submit_form.php" method="POST" enctype="multipart/form-data">
+                        <input class="input" name="customer" placeholder="Ваше имя" required>
+                        <input class="input" name="phone" placeholder="Телефон" required>
+                        <input class="input" name="email" placeholder="Email">
+                        <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
+                        <div>
+                            <input class="checkbox" type="checkbox" required>
+                            <span>Я согласен(-на) на обработку <a class="text-link" href="/upload/pdp_agreement.pdf">персональных данных</a></span>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </menu>
     <footer class="footer">
             <p class="text">
                 © 2020-26 Акабо
