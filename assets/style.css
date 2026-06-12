@@ -70,8 +70,58 @@ h3 {
     text-align: center;
     padding: 0 0 40px;
 }
+table {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    border-collapse: collapse;
+}
 
-/* Универсальные классы */
+th, td {
+    padding: 24px 32px;
+}
+
+th {
+    font-weight: 700;
+}
+
+.al {
+    text-align: left;
+}
+
+.ar {
+    text-align: right;
+}
+
+.thead, .tfoot {
+    color: var(--white);
+    background: var(--dusty-black);
+}
+
+.odd {
+    background: var(--light-blue-2);
+}
+
+.even {
+    background: var(--white);
+}
+
+.tl {
+    border-top-left-radius: 16px;
+}
+
+.tr {
+    border-top-right-radius: 16px;
+}
+
+.bl {
+    border-bottom-left-radius: 16px;
+}
+
+.br {
+    border-bottom-right-radius: 16px;
+}
 
 .text-link {
     color: var(--heavenly);
@@ -325,54 +375,10 @@ h3 {
     display: none;
 }
 
-table {
-    width: 100%;
-    font-size: 24px;
-    font-weight: 500;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 24px 32px;
-}
-
-th {
-    font-weight: 700;
-}
-
-.row-0, .row-3 {
-    color: var(--white);
-    background: var(--dusty-black);
-}
-
-.row-1 {
-    background: var(--light-blue-2);
-}
-
-.row-2 {
-    background: var(--white);
-}
-
-.tl {
-    border-top-left-radius: 16px;
-}
-
-.tr {
-    border-top-right-radius: 16px;
-}
-
-.bl {
-    border-bottom-left-radius: 16px;
-}
-
-.br {
-    border-bottom-right-radius: 16px;
-}
-
-.notification {
+.price .notification {
     display: none;
-    font-size: 10px;
-    padding-top: 16px;
+    font-size: 24px;
+    padding-top: 32px;
 }
 
 /* Примеры наших работ */
@@ -669,9 +675,40 @@ th {
     display: block;
 }
 
+/* Планшетная версия */
+
+@media (max-width: 1080px) {
+
+    /* Наши услуги */
+    
+    .services .tiles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Стоимость сервиса */
+
+    #table-wide {
+        display: none;
+    }
+
+    #table-narrow {
+        display: table;
+    }
+
+    .price .notification {
+        display: flex;
+    }
+
+    /* Примеры наших работ */
+
+    .portfolio .tiles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 /* Мобильная версия */
 
-@media (max-width: 560px) {
+@media (max-width: 576px) {
 
     h1 {
         font-size: 32px;
@@ -684,6 +721,30 @@ th {
 
     h3 {
         font-size: 13px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 12px 16px;
+    }
+
+    .tl {
+        border-top-left-radius: 8px;
+    }
+
+    .tr {
+        border-top-right-radius: 8px;
+    }
+
+    .bl {
+        border-bottom-left-radius: 8px;
+    }
+
+    .br {
+        border-bottom-right-radius: 8px;
     }
 
     .btn {
@@ -785,44 +846,9 @@ th {
         padding: 0 16px 32px;
     }
 
-    #table-wide {
-        display: none;
-    }
-
-    #table-narrow {
-        display: table;
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    th, td {
-        padding: 12px 16px;
-    }
-
-    .tl {
-        border-top-left-radius: 8px;
-    }
-
-    .tr {
-        border-top-right-radius: 8px;
-    }
-
-    .bl {
-        border-bottom-left-radius: 8px;
-    }
-
-    .br {
-        border-bottom-right-radius: 8px;
-    }
-
-    .row-3 {
-        font-size: 10px;
-    }
-
     .price .notification {
-        display: flex;
+        font-size: 10px;
+        padding-top: 16px;
     }
 
     /* Примеры наших работ */

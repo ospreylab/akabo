@@ -20,12 +20,13 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/109774880" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <a href="/" class="logo">
                 <img class="logo-img" src="/img/logo.png" alt="Сервис и ремонт ЛОС">
-                <p class="logo-text">Акабо</p>
+                <div class="logo-text">Акабо</div>
             </a>
             
             <ul class="menu">
@@ -50,6 +51,7 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section class="first-screen">
             <div class="container">
@@ -74,13 +76,14 @@
                 </div>
 
                 <div class="rates">
-                    <p class="rate">1400+<br><span>Сервисов выполнено</span></p>
-                    <p class="rate">8 лет<br><span>На рынке</span></p>
-                    <p class="rate">97%<br><span>Довольных клиентов</span></p>
-                    <p class="rate">48 ч<br><span>Среднее время выезда</span></p>
+                    <div class="rate">1400+<br><span>Сервисов выполнено</span></div>
+                    <div class="rate">8 лет<br><span>На рынке</span></div>
+                    <div class="rate">97%<br><span>Довольных клиентов</span></div>
+                    <div class="rate">48 ч<br><span>Среднее время выезда</span></div>
                 </div>
             </div>
         </section>
+
         <section class="services">
             <h2 id="services">
                 Наши услуги
@@ -106,6 +109,7 @@
                 </div>
             </div>
         </section>
+
         <section class="price">
             <h2 id="price">
                 Цены на сервис
@@ -114,49 +118,62 @@
                 Пожалуй, самое привлекательное предложение в Ленинградской области
             </h3>
             <table id="table-wide">
-                <tr class="row-0">
-                    <th class="tl">Размер станции</th><th>Количество человек</th><th>до 50 км от КАД</th><th>50–150 км</th><th class="tr">150–250 км</th>
-                </tr>
-                <tr class="row-1">
-                    <td>Стандарт</td><td>3–8</td><td><b>6&nbsp;500&nbsp;руб.</b></td><td><b>7&nbsp;500&nbsp;руб.</b></td><td><b>9&nbsp;000&nbsp;руб.</b></td>
-                </tr>
-                <tr class="row-2">
-                    <td>Стандарт</td><td>9–12</td><td><b>7&nbsp;000&nbsp;руб.</b></td><td><b>8&nbsp;000&nbsp;руб.</b></td><td><b>9&nbsp;500&nbsp;руб.</b></td>
-                </tr>
-                <tr class="row-1">
-                    <td>Удлиненная</td><td>3–8</td><td><b>7&nbsp;500&nbsp;руб.</b></td><td><b>8&nbsp;500&nbsp;руб.</b></td><td><b>10&nbsp;000&nbsp;руб.</b></td>
-                </tr>
-                <tr class="row-2">
-                    <td>Удлиненная</td><td>9–12</td><td><b>8&nbsp;000&nbsp;руб.</b></td><td><b>9&nbsp;000&nbsp;руб.</b></td><td><b>10&nbsp;500&nbsp;руб.</b></td>
-                </tr>
-                <tr class="row-3">
-                    <td class="bl br" colspan=5>Вызов ассенизаторской машины оплачивается отдельно</td>
-                </tr>
+                <thead class="thead">
+                    <tr>
+                        <th class="al tl">Размер станции</th><th>Количество человек</th><th>до 50 км от КАД</th><th>50–150 км</th><th class="ar tr">150–250 км</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd">
+                        <td class="al">Стандарт</td><td>3–8</td><td><b>6&nbsp;500&nbsp;руб.</b></td><td><b>7&nbsp;500&nbsp;руб.</b></td><td class="ar"><b>9&nbsp;000&nbsp;руб.</b></td>
+                    </tr>
+                    <tr class="even">
+                        <td class="al">Стандарт</td><td>9–12</td><td><b>7&nbsp;000&nbsp;руб.</b></td><td><b>8&nbsp;000&nbsp;руб.</b></td><td class="ar"><b>9&nbsp;500&nbsp;руб.</b></td>
+                    </tr>
+                    <tr class="odd">
+                        <td class="al">Удлиненная</td><td>3–8</td><td><b>7&nbsp;500&nbsp;руб.</b></td><td><b>8&nbsp;500&nbsp;руб.</b></td><td class="ar"><b>10&nbsp;000&nbsp;руб.</b></td>
+                    </tr>
+                    <tr class="even">
+                        <td class="al">Удлиненная</td><td>9–12</td><td><b>8&nbsp;000&nbsp;руб.</b></td><td><b>9&nbsp;000&nbsp;руб.</b></td><td class="ar"><b>10&nbsp;500&nbsp;руб.</b></td>
+                    </tr>
+                </tbody>
+                <tfoot class="tfoot">
+                    <tr>
+                        <td class="al bl br" colspan=5>Вызов ассенизаторской машины оплачивается отдельно</td>
+                    </tr>
+                </tfoot>
             </table>
             <table id="table-narrow">
-                <tr class="row-0">
-                    <th class="tl">Размер станции</th><th>Кол-во чел.</th><th class="tr">Стоимость, руб.</th>
-                </tr>
-                <tr class="row-1">
-                    <td>Стандарт</td><td>3–8</td><td><b>6&nbsp;500*</b></td>
-                </tr>
-                <tr class="row-2">
-                    <td>Стандарт</td><td>9–12</td><td><b>7&nbsp;000*</b></td>
-                </tr>
-                <tr class="row-1">
-                    <td>Удлиненная</td><td>3–8</td><td><b>7&nbsp;500*</b></td>
-                </tr>
-                <tr class="row-2">
-                    <td>Удлиненная</td><td>9–12</td><td><b>8&nbsp;000*</b></td>
-                </tr>
-                <tr class="row-3">
-                    <td class="bl br" colspan=3>Вызов ассенизаторской машины оплачивается отдельно</td>
-                </tr>
+                <thead class="thead">
+                    <tr>
+                        <th class="al tl">Размер станции</th><th>Кол-во чел.</th><th class="ar tr">Стоимость, руб.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd">
+                        <td class="al">Стандарт</td><td>3–8</td><td class="ar"><b>6&nbsp;500*</b></td>
+                    </tr>
+                    <tr class="even">
+                        <td class="al">Стандарт</td><td>9–12</td><td class="ar"><b>7&nbsp;000*</b></td>
+                    </tr>
+                    <tr class="odd">
+                        <td class="al">Удлиненная</td><td>3–8</td><td class="ar"><b>7&nbsp;500*</b></td>
+                    </tr>
+                    <tr class="even">
+                        <td class="al">Удлиненная</td><td>9–12</td><td class="ar"><b>8&nbsp;000*</b></td>
+                    </tr>
+                </tbody>
+                <tfoot class="tfoot">
+                    <tr>
+                        <td class="bl br" colspan=3>Вызов ассенизаторской машины оплачивается отдельно</td>
+                    </tr>
+                </tfoot>
             </table>
-            <p class="notification">
+            <div class="notification">
                 * в стоимость входит выезд мастера (до 50 км от КАД), далее +500 руб. за каждые дополнительные 50 км
-            </p>
+            </div>
         </section>
+
         <section class="portfolio">
             <h2 id="portfolio">
                 Примеры наших работ
@@ -197,6 +214,7 @@
                 </div>
             </div>
         </section>
+
         <section class="how-it-works">
             <h2 id="how-it-works">
                 Как это работает
@@ -231,6 +249,7 @@
                 <button type="button" class="btn secondary-btn">Создать заявку сейчас</button>
             </a>
         </section>
+
         <section class="feedback">
             <h2 id="feedback">
                 Отзывы клиентов
@@ -259,6 +278,7 @@
                 </div>
             </div>
         </section>
+
         <section class="faq">
             <h2>
                 Часто задаваемые вопросы
@@ -304,6 +324,7 @@
                 </p>
             </div>
         </section>
+
         <section id="contacts" class="contacts">
             <div class="wrapper">
                 <div>
@@ -338,7 +359,21 @@
                 </div>
             </div>
         </section>
-    </menu>
+
+        <!-- Модальное окно "Ваша заявка принята" -->
+        <div class="overlay" id="simpleOverlay"></div>
+        <div class="modal" id="simpleModal">
+            <?php if (isset($_GET['result']) && $_GET['result'] == 'sucсess'): ?>
+                <h2>Ваша заявка принята!</h2>
+                <p>Мы свяжемся с вами в ближайшее время.</p>
+            <?php else:?>
+                <h2>Ошибка отправки</h2>
+                <p>Пожалуста, свяжитесь с нами <a class="text-link" href="tel:+79673409376">+7 (967) 340-93-76</a></p>
+            <?php endif; ?>
+            <button class="btn primary-btn" onclick="closeModal()">Закрыть</button>
+        </div>
+    </main>
+
     <footer class="footer">
             <p class="text">
                 © 2020-26 Акабо
@@ -347,18 +382,6 @@
                 Сделано в студии <a class="text-link" href="https://ospreylab.ru">ospreylab</a>
             </p>      
     </footer>
-
-    <div class="overlay" id="simpleOverlay"></div>
-    <div class="modal" id="simpleModal">
-        <?php if (isset($_GET['result']) && $_GET['result'] == 'sucсess'): ?>
-            <h2>Ваша заявка принята!</h2>
-            <p>Мы свяжемся с вами в ближайшее время.</p>
-        <?php else:?>
-            <h2>Ошибка отправки</h2>
-            <p>Пожалуста, свяжитесь с нами <a class="text-link" href="tel:+79673409376">+7 (967) 340-93-76</a></p>
-        <?php endif; ?>
-        <button class="btn primary-btn" onclick="closeModal()">Закрыть</button>
-    </div>
 
     <script src="assets/script.js"></script>
     <script>
