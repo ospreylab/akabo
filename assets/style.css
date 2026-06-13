@@ -206,8 +206,10 @@ th {
 .header {
     padding: 16px 24px;
     background-color: var(--white);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
 }
 
@@ -244,6 +246,10 @@ th {
     padding: 24px;
 }
 
+.menu.active {
+    display: flex;
+}
+
 .menu a {
     white-space: nowrap;
     color: var(--dark-grey);
@@ -269,6 +275,12 @@ th {
     background-color: #333;
     margin: 3px 0;
     transition: 0.3s;
+}
+
+/* Основной контент */
+
+.section {
+    padding: 48px 32px;
 }
 
 /* Первый экран */
@@ -330,7 +342,6 @@ th {
 /* Наши услуги */
 
 .services {
-    padding: 0 32px 64px;
     background-color: var(--light-grey);
 }
 
@@ -367,7 +378,6 @@ th {
 /* Стоимость сервиса */
 
 .price {
-    padding: 0 32px 64px;
     background-color: var(--light-blue-1);
 }
 
@@ -384,7 +394,6 @@ th {
 /* Примеры наших работ */
 
 .portfolio {
-    padding: 0 32px 64px;
     background-color: var(--white);
 }
 
@@ -455,7 +464,6 @@ th {
 /* Как мы работаем */
 
 .how-it-works {
-    padding: 0 32px 64px;
     background-color: var(--blue);
 }
 
@@ -500,10 +508,6 @@ th {
 
 /* Отзывы клиентов */
 
-.feedback {
-    padding: 0 32px 64px;
-}
-
 .feedback .reviews {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -544,7 +548,6 @@ th {
 /* Часто задаваемые вопросы */
 
 .faq {
-    padding: 0 32px 64px;
     background-color: var(--white);
 }
 
@@ -578,7 +581,6 @@ th {
 /* Контакты и форма */
 
 .contacts {
-    padding: 16px 32px 64px;
     background-color: var(--dark-night);
 }
 
@@ -770,7 +772,20 @@ th {
         font-size: 18px;
     }
 
-    .menu, #call-us {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        padding: 16px;
+        background: var(--white);
+        z-index: 1000;
+    }
+    
+    #call-us {
         display: none;
     }
     
@@ -778,10 +793,16 @@ th {
         display: flex;
     }
 
+    /* Основной контент */
+
+    .section {
+        padding: 32px 16px;
+    }
+
     /* Первый экран */
     
     .first-screen .container {
-        padding: 16px;
+        padding: 64px 16px 16px;
         gap: 16px;
     }
     
@@ -812,10 +833,6 @@ th {
 
     /* Наши услуги */
 
-    .services {
-        padding: 0 16px 32px;
-    }
-
     .services .tiles {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 8px;
@@ -842,20 +859,12 @@ th {
 
     /* Стоисмость сервиса */
 
-    .price {
-        padding: 0 16px 32px;
-    }
-
     .price .notification {
         font-size: 10px;
         padding-top: 16px;
     }
 
     /* Примеры наших работ */
-
-    .portfolio {
-        padding: 0 16px 32px;
-    }
 
     .portfolio .tiles {
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -892,10 +901,6 @@ th {
 
     /* Как мы работаем */
 
-    .how-it-works {
-        padding: 0 16px 32px;
-    }
-
     .how-it-works .steps {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 32px;
@@ -920,10 +925,6 @@ th {
     }
 
     /* Отзывы клиентов */
-
-    .feedback {
-        padding: 0 16px 32px;
-    }
 
     .feedback .reviews {
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -954,10 +955,6 @@ th {
 
     /* Часто задаваемые вопросы */
 
-    .faq {
-        padding: 0 16px 32px;
-    }
-
     .faq .accordion {
         margin: 16px auto;
         padding: 16px;
@@ -973,10 +970,6 @@ th {
     }
 
     /* Контакты и форма */
-
-    .contacts {
-        padding: 8px 16px 32px;
-    }
 
     .contacts .wrapper {
         flex-direction: column;

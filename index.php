@@ -29,7 +29,7 @@
                 <div class="logo-text">Акабо</div>
             </a>
             
-            <ul class="menu">
+            <ul id="menu" class="menu">
                 <li><a href="#services">Услуги</a></li>
                 <li><a href="#price">Цены</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
@@ -46,14 +46,14 @@
                 </button>
             </a>
 
-            <div class="burger">
+            <div id="burger" class="burger">
                 <img src="/img/menu-closed.png">
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="first-screen">
+        <section class="section first-screen">
             <div class="container">
                 <a href="tel:+79673409376">
                     <button type="button" id="call-us-mobile" class="btn quaternary-btn">
@@ -84,8 +84,8 @@
             </div>
         </section>
 
-        <section class="services">
-            <h2 id="services">
+        <section id="services" class="section services">
+            <h2>
                 Наши услуги
             </h2>
             <h3>
@@ -110,8 +110,8 @@
             </div>
         </section>
 
-        <section class="price">
-            <h2 id="price">
+        <section id="price" class="section price">
+            <h2>
                 Цены на сервис
             </h2>
             <h3>
@@ -174,8 +174,8 @@
             </div>
         </section>
 
-        <section class="portfolio">
-            <h2 id="portfolio">
+        <section id="portfolio" class="section portfolio">
+            <h2>
                 Примеры наших работ
             </h2>
             <h3>
@@ -215,8 +215,8 @@
             </div>
         </section>
 
-        <section class="how-it-works">
-            <h2 id="how-it-works">
+        <section id="how-it-works" class="section how-it-works">
+            <h2>
                 Как это работает
             </h2>
             <h3>
@@ -250,8 +250,8 @@
             </a>
         </section>
 
-        <section class="feedback">
-            <h2 id="feedback">
+        <section id="feedback" class="section feedback">
+            <h2>
                 Отзывы клиентов
             </h2>
             <h3>
@@ -279,7 +279,7 @@
             </div>
         </section>
 
-        <section class="faq">
+        <section class="section faq">
             <h2>
                 Часто задаваемые вопросы
             </h2>
@@ -325,7 +325,7 @@
             </div>
         </section>
 
-        <section id="contacts" class="contacts">
+        <section id="contacts" class="section contacts">
             <div class="wrapper">
                 <div>
                     <h2>Свяжитесь с нами</h2>
@@ -385,9 +385,55 @@
 
     <script src="assets/script.js"></script>
     <script>
+        console.log('Hello 1');
+
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        let isMenuOpened = false;
+
+        function toggleMenu() {
+            if (isMenuOpened) {
+                // Закрываем меню
+                menu.classList.remove('active');
+                //burgerIcon.src = iconClosed;
+                isMenuOpened = false;
+            } else {
+                // Открываем меню
+                menu.classList.add('active');
+                //burgerIcon.src = iconOpened;
+                isMenuOpened = true;
+            }
+            console.log(isMenuOpened);
+        }
+
+        // Обработчик клика по бургеру
+        burger.addEventListener('click', toggleMenu);
+
+        // Закрытие меню при клике на ссылку в мобильном меню
+        const menuLinks = menu.querySelectorAll('a');
+        
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpened) {
+                    menu.classList.remove('active');
+                    //burgerIcon.src = iconClosed;
+                    isMenuOpened = false;
+                }
+            });
+        });
+
+        // Закрытие меню при изменении размера окна на десктопный режим
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 576 && isMenuOpened) {
+                menu.classList.remove('active');
+                //burgerIcon.src = iconClosed;
+                isMenuOpened = false;
+            }
+        });
+
         <?php if (isset($_GET['result'])): ?>
             openModal();
-            console.log('Hello');
         <?php endif; ?>
     </script>
 </body>
