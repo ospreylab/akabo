@@ -25,7 +25,7 @@
     <header class="header">
         <nav class="nav">
             <a href="/" class="logo">
-                <img class="logo-img" src="/img/logo.png" alt="Сервис и ремонт ЛОС">
+                <img class="logo-img" src="/assets/img/logo.svg" alt="Сервис и ремонт ЛОС">
                 <div class="logo-text">Акабо</div>
             </a>
             
@@ -42,12 +42,12 @@
             
             <a href="tel:+79673409376">
                 <button type="button" id="call-us" class="btn primary-btn">
-                    <img src="/img/phone-1.svg">+7 (967) 340-93-76
+                    <img src="/assets/img/phone-1.svg">+7 (967) 340-93-76
                 </button>
             </a>
 
             <div id="burger" class="burger">
-                <img src="/img/menu-closed.png">
+                <img src="/assets/img/menu-closed.svg">
             </div>
         </nav>
     </header>
@@ -57,7 +57,7 @@
             <div class="container">
                 <a href="tel:+79673409376">
                     <button type="button" id="call-us-mobile" class="btn quaternary-btn">
-                        <img src="/img/phone-2.svg">+7 (967) 340-93-76
+                        <img src="/assets/img/phone-2.svg">+7 (967) 340-93-76
                     </button>
                 </a>
                 <h1>
@@ -93,17 +93,17 @@
             </h3>
             <div class="tiles">
                 <div class="tile">
-                    <img src="/img/drop.png">
+                    <img src="/assets/img/drop.svg">
                     <p class="title">Диагностика</p>
                     <p class="description">Тестирование всех компонентов вашего очистного сооружение и комплексная проверка функционирования.</p>
                 </div>
                 <div class="tile">
-                    <img src="/img/drop.png">
+                    <img src="/assets/img/drop.svg">
                     <p class="title">Ремонт и апгрейд</p>
                     <p class="description">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
                 </div>
                 <div class="tile">
-                    <img src="/img/drop.png">
+                    <img src="/assets/img/drop.svg">
                     <p class="title">Сервис</p>
                     <p class="description">Выполнение регламентных операций по очистке вашего септика, сезонная консервация и ввод в эксплуатацию.</p>
                 </div>
@@ -224,22 +224,22 @@
             </h3>
             <div class="steps">
                 <div class="step">
-                    <img src="/img/icon-01.png">
+                    <img src="/assets/img/icon-1.svg">
                     <p class="title">Заявка онлайн или по телефону</p>
                     <p class="description">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
                 </div>
                 <div class="step">
-                    <img src="/img/icon-02.png">
+                    <img src="/assets/img/icon-2.svg">
                     <p class="title">Подтверждение</p>
                     <p class="description">Наш специалист свяжется с вами и подтвердит время визита.</p>
                 </div>
                 <div class="step">
-                    <img src="/img/icon-03.png">
+                    <img src="/assets/img/icon-3.svg">
                     <p class="title">Выезд сервисного инженера</p>
                     <p class="description">Инженер приедет в согласованное время со всем оборудованием.</p>
                 </div>
                 <div class="step">
-                    <img src="/img/icon-04.png">
+                    <img src="/assets/img/icon-4.svg">
                     <p class="title">Готовый результат</p>
                     <p class="description">Вы получаете рабочую систему в день приезда специалиста</p>
                 </div>
@@ -259,7 +259,7 @@
             </h3>
             <div class="reviews">
                 <div class="review">
-                    <img src="/img/rating-5.png">
+                    <img src="/assets/img/rating-5.svg">
                     <p class="text">
                         «Сотрудничаем более трёх лет. Мастера всегда приезжают вовремя. Нареканий по работе станций после обслуживания нет. В случае возникновения аварийной ситуации реагируют оперативно».
                     </p>
@@ -268,7 +268,7 @@
                     </p>
                 </div>
                 <div class="review">
-                    <img src="/img/rating-5.png">
+                    <img src="/assets/img/rating-5.svg">
                     <p class="text">
                         «Заказываю регулярное обслуживание септика у этих мастеров. Бережно относятся к участку и мои насаждениям. Дают полезные советы по эксплуатации станции. Рекомендую как надёжного партнера!».
                     </p>
@@ -290,7 +290,7 @@
                 
                 <p class="question">
                     Как быстро приедет мастер?
-                    <img src="/img/accordion-opened.png">
+                    <img src="/assets/img/accordion-opened.svg">
                 </p>
                 <p class="answer">
                     Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
@@ -299,7 +299,7 @@
             <div class="accordion">
                 <p class="question">
                     Какая гарантия на работу?
-                    <img src="/img/accordion-opened.png">
+                    <img src="/assets/img/accordion-opened.svg">
                 </p>
                 <p class="answer">
                     Гарантия на работу и оборудование составляет один год. 
@@ -308,7 +308,7 @@
             <div class="accordion">
                 <p class="question">
                     Работаете ли вы с базами отдыха?
-                    <img src="/img/accordion-opened.png">
+                    <img src="/assets/img/accordion-opened.svg">
                 </p>
                 <p class="answer">
                     Да, работаем. Есть возможность оплаты по безнальчному расчету. 
@@ -317,7 +317,7 @@
             <div class="accordion">
                 <p class="question">
                     Работаете ли за пределами Ленинградской области?
-                    <img src="/img/accordion-opened.png">
+                    <img src="/assets/img/accordion-opened.svg">
                 </p>
                 <p class="answer">
                     По договоренности возможен выезд в соседние регионы.
@@ -331,16 +331,16 @@
                     <h2>Свяжитесь с нами</h2>
                     <h3>Готовы обсудить ваш проект и рассчитать стоимость выезда. Свяжитесь с нами удобным способом.</h3>
                     <div class="row">
-                        <img src="/img/icon-phone.png"><p>Телефон<span>+7 (967) 340-93-76</span></p>
+                        <img src="/assets/img/icon-phone.svg"><p>Телефон<span>+7 (967) 340-93-76</span></p>
                     </div>
                     <div class="row">
-                        <img src="/img/icon-email.png"><p>Email<span>zakaz@akabo.ru</span></p>
+                        <img src="/assets/img/icon-email.svg"><p>Email<span>zakaz@akabo.ru</span></p>
                     </div>
                     <div class="row">
-                        <img src="/img/icon-geo.png"><p>Адрес<span>г. Санкт-Петербург</span></p>
+                        <img src="/assets/img/icon-geo.svg"><p>Адрес<span>г. Санкт-Петербург</span></p>
                     </div>
                     <div class="row">
-                        <img src="/img/icon-clock.png"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
+                        <img src="/assets/img/icon-clock.svg"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
                     </div>
                 </div>
                 <div class="quick-form">

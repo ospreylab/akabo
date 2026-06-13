@@ -211,6 +211,7 @@ th {
     left: 0;
     right: 0;
     z-index: 1000;
+    border-bottom: solid 1px var(--light-blue-2);
 }
 
 .nav {
@@ -286,7 +287,7 @@ th {
 /* Первый экран */
 
 .first-screen {
-    background-image: url('/img/background.jpg');
+    background-image: url('/assets/img/background.webp');
     background-size: cover;
     background-position: center;
 }
@@ -417,15 +418,15 @@ th {
 }
 
 .portfolio-1 {
-    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/img/portfolio-1.jpg');
+    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/assets/img/portfolio-1.webp');
 }
 
 .portfolio-2 {
-    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/img/portfolio-2.jpg');
+    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/assets/img/portfolio-2.webp');
 }
 
 .portfolio-3 {
-    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/img/portfolio-3.jpg');
+    background: linear-gradient(rgba(255,255,255,0), rgba(97,98,98,100)), url('/assets/img/portfolio-3.webp');
 }
 
 .portfolio .label {
@@ -775,13 +776,15 @@ th {
     .menu {
         display: none;
         flex-direction: column;
-        gap: 8px;
+        gap: 24px;
+        padding: 24px;
         position: fixed;
-        top: 64px;
+        top: 65px;
         left: 0;
         right: 0;
-        padding: 16px;
+        font-size: 24px;
         background: var(--white);
+        border-bottom: solid 1px var(--light-blue-2);
         z-index: 1000;
     }
     

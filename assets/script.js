@@ -1,5 +1,3 @@
-
-
 function openModal() {
     document.getElementById('simpleModal').classList.add('active');
     document.getElementById('simpleOverlay').classList.add('active');
