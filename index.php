@@ -46,8 +46,8 @@
                 </button>
             </a>
 
-            <div id="burger" class="burger">
-                <img src="/assets/img/menu-closed.svg">
+            <div id="burger-btn" class="burger">
+                <img id="burger-img" src="/assets/img/menu-closed.svg">
             </div>
         </nav>
     </header>
@@ -385,10 +385,12 @@
 
     <script src="assets/script.js"></script>
     <script>
-        console.log('Hello 1');
+        const burgerBtn = document.getElementById('burger-btn');
+        const upperMenu = document.getElementById('menu');
+        const burgerImg = document.getElementById('burger-img');
 
-        const burger = document.getElementById('burger');
-        const menu = document.getElementById('menu');
+        const iconMenuClosed = '/assets/img/menu-closed.svg';
+        const iconMenuOpened = '/assets/img/menu-opened.svg';
 
         let isMenuOpened = false;
 
@@ -396,19 +398,18 @@
             if (isMenuOpened) {
                 // Закрываем меню
                 menu.classList.remove('active');
-                //burgerIcon.src = iconClosed;
+                burgerImg.src = iconMenuClosed;
                 isMenuOpened = false;
             } else {
                 // Открываем меню
                 menu.classList.add('active');
-                //burgerIcon.src = iconOpened;
+                burgerImg.src = iconMenuOpened;
                 isMenuOpened = true;
             }
-            console.log(isMenuOpened);
         }
 
         // Обработчик клика по бургеру
-        burger.addEventListener('click', toggleMenu);
+        burgerBtn.addEventListener('click', toggleMenu);
 
         // Закрытие меню при клике на ссылку в мобильном меню
         const menuLinks = menu.querySelectorAll('a');
@@ -417,7 +418,7 @@
             link.addEventListener('click', () => {
                 if (isMenuOpened) {
                     menu.classList.remove('active');
-                    //burgerIcon.src = iconClosed;
+                    burgerImg.src = iconMenuClosed;
                     isMenuOpened = false;
                 }
             });
@@ -427,7 +428,7 @@
         window.addEventListener('resize', function() {
             if (window.innerWidth > 576 && isMenuOpened) {
                 menu.classList.remove('active');
-                //burgerIcon.src = iconClosed;
+                burgerImg.src = iconMenuClosed;
                 isMenuOpened = false;
             }
         });
