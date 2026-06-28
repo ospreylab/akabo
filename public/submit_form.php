@@ -7,9 +7,11 @@ if (!empty($_POST)) {
     if (isset($_POST['email'])) $message .= "\nEmail: {$_POST['email']}";
     if (isset($_POST['task'])) $message .= "\nЗадача: {$_POST['task']}";
 
+    $protocol = (!empty($_SERVER['HTTPS'])) ? 'https' : 'http';
+
     if (mail($to, $subject, $message)) {
-        header("Location: https://akabo.ru/index.php?result=sucсess");
+        header("Location: {$protocol}://{$_SERVER['HTTP_HOST']}/index.php?result=sucсess");
     } else {
-        header("Location: https://akabo.ru/index.php?result=fail");
+        header("Location: {$protocol}://{$_SERVER['HTTP_HOST']}/index.php?result=fail");
     }
 }

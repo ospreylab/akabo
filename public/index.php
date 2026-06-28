@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Акабо - Сервис и ремонт вашего септика</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" media="screen, projection">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -30,14 +30,14 @@
             </a>
             
             <ul id="menu" class="menu">
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#price">Цены</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#how-it-works">Как это работает</a></li>
-                <li><a href="#feedback">Отзывы</a></li>
-                <li><a href="#coupon">Промокод</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="/#services">Услуги</a></li>
+                <li><a href="/#price">Цены</a></li>
+                <li><a href="/#portfolio">Портфолио</a></li>
+                <li><a href="/#how-it-works">Как это работает</a></li>
+                <li><a href="/#feedback">Отзывы</a></li>
+                <li><a href="/#coupon">Промокод</a></li>
+                <li><a href="/blog">Блог</a></li>
+                <li><a href="/#contacts">Контакты</a></li>
             </ul>
             
             <a href="tel:+79673409376">
@@ -53,6 +53,12 @@
     </header>
 
     <main>
+        <?php if (isset($page) || isset($post)): ?>
+            <?php
+            print('page = ' . $page . PHP_EOL);
+            print('post = ' . $post . PHP_EOL);
+            ?>
+        <?php else: ?>
         <section class="section first-screen">
             <div class="container">
                 <a href="tel:+79673409376">
@@ -359,6 +365,7 @@
                 </div>
             </div>
         </section>
+        <?php endif; ?>
 
         <!-- Модальное окно "Ваша заявка принята" -->
         <div class="overlay" id="simpleOverlay"></div>
