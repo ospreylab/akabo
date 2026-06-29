@@ -45,11 +45,10 @@ a {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 1.24;
-    color: var(--white);
-    max-width: 75%;
+    color: var(--black);
+    text-align: center;
 }
 
 h1 span {
@@ -59,17 +58,16 @@ h1 span {
 h2 {
     font-size: 48px;
     font-weight: 700;
-    text-align: center;
     color: var(--black);
-    padding: 40px 0 16px;
+    text-align: center;
 }
 
 h3 {
     font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    padding: 0 0 40px;
+    font-weight: 700;
+    text-align: left;
 }
+
 table {
     width: 100%;
     font-size: 24px;
@@ -78,7 +76,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 24px 32px;
 }
 
@@ -94,7 +93,8 @@ th {
     text-align: right;
 }
 
-.thead, .tfoot {
+.thead,
+.tfoot {
     color: var(--white);
     background: var(--dusty-black);
 }
@@ -123,7 +123,13 @@ th {
     border-bottom-right-radius: 16px;
 }
 
-.text-link {
+.comment,
+.subheader {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.url {
     color: var(--heavenly);
 }
 
@@ -204,13 +210,13 @@ th {
 /* Шапка */
 
 .header {
-    padding: 16px 24px;
-    background-color: var(--white);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    padding: 16px 24px;
+    background-color: var(--white);
     border-bottom: solid 1px var(--light-blue-2);
 }
 
@@ -281,52 +287,73 @@ th {
 /* Основной контент */
 
 .section {
-    padding: 48px 32px;
+    scroll-margin-top: 100px;
+    padding: 64px 32px;
+    gap: 32px;
+}
+
+.section h2 {
+    padding: 40px 0 16px;
+}
+
+.section .subheader {
+    text-align: center;
+    padding: 0 0 40px;
 }
 
 /* Первый экран */
 
-.first-screen {
+.hero {
+    margin: 100px 0 0;
+    padding: 64px 0;
     background-image: url('/assets/img/background.webp');
     background-size: cover;
     background-position: center;
 }
 
-.first-screen .container {
+.hero .container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    max-width: 1100px;
+    gap: 32px;
     margin: 0 auto;
-    padding: 100px 20px 0;
+    max-width: 1280px;
 }
 
 #call-us-mobile {
     font-size: 24px;
     display: none;
+    margin: 24px 0;
 }
 
-.first-screen .text {
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.25;
+    text-align: left;
+    color: var(--white);
+}
+
+.hero .subheader {
     font-size: 20px;
     line-height: 1.6;
+    text-align: left;
     color: var(--light-blue-2);
-    max-width: 75%;
+    padding: 32px 0;
 }
 
-.first-screen .buttons {
+.hero .buttons {
     display: flex;
     gap: 64px;
-    padding: 32px 64px 64px;
+    padding: 64px;
     border-bottom: solid 1px var(--dark-grey);
 }
 
-.first-screen .rates {
+.hero .rates {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     padding: 48px 0;
 }
 
-.first-screen .rate {
+.hero .rate {
     gap: 8px;    
     padding: 8px;
     font-size: 48px;
@@ -334,7 +361,7 @@ th {
     color: var(--white);
 }
 
-.first-screen .rate span {
+.hero .rate span {
     font-size: 20px;
     font-weight: 500;
     color: var(--dark-grey);
@@ -364,16 +391,14 @@ th {
     height: auto;
 }
 
-.services .tile .title {
+.services .tile h3 {
     font-size: 40px;
-    font-weight: 700;
     color: var(--black);
     padding: 16px 0;
 }
 
-.services .tile .description {
-    font-size: 20px;
-    line-height: 1.4;
+.services .tile .comment {
+    text-align: left;
 }
 
 /* Стоимость сервиса */
@@ -472,7 +497,7 @@ th {
     color: var(--white);
 }
 
-.how-it-works h3 {
+.how-it-works .subheader {
     color: var(--heavenly);
 }
 
@@ -491,14 +516,14 @@ th {
     width: 96px;
 }
 
-.how-it-works .title {
-    font-size: 20px;
+.how-it-works .step h3 {
     font-weight: 700;
+    text-align: center;
     color: var(--white);
     padding: 16px 0;
 }
 
-.how-it-works .description {
+.how-it-works .step .comment {
     font-size: 20px;
     color: var(--white);
 }
@@ -509,38 +534,39 @@ th {
 
 /* Отзывы клиентов */
 
-.feedback .reviews {
+.feedback .tiles {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
     gap: 64px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.feedback .review {
+.feedback .tile {
     padding: 24px;
     background-color: var(--white);
     border: solid 2px var(--light-blue-2);
     border-radius: 16px;
+    max-width: 680px;
 }
 
-.feedback .review img {
+.feedback .tile img {
     width: 176px;
     height:  auto;
 }
 
-.feedback .text {
-    font-size: 24px;
+.feedback .comment {
     padding: 16px 0;
     border-bottom: solid 2px var(--light-blue-2);
 }
 
-.feedback .signature {
+.feedback .customer {
     font-size: 24px;
     font-weight: 700;
     color: var(--black);
     padding: 8px 0;
 }
 
-.feedback .signature span {
+.feedback .customer span {
     font-size: 20px;
     font-weight: 500;
     color: var(--dark-grey);
@@ -565,43 +591,157 @@ th {
     height: auto;
 }
 
-.faq .question {
+.faq h3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: 20px;
-    font-weight: 700;
     color: var(--black);
     margin-bottom: 16px;
 }
 
-.faq .answer {
-    font-size: 20px;
+/* Промокод */
+
+.coupon {
+    text-align: center;
+    background-color: var(--heavenly);
 }
 
-/* Контакты и форма */
+.coupon h2 {
+    color: var(--white);
+}
 
-.contacts {
+.coupon .subheader {
+    color: var(--blue);
+}
+
+.ticket {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.25;
+    display: inline-flex;
+    gap: 16px;
+    padding: 32px;
+    text-align: center;
+    color: var(--heavenly);
+    background-color: var(--white);
+    border-radius: 32px;
+}
+
+.ticket img {
+    width: 104px;
+    height:  auto;
+}
+
+/* Блог */
+
+.blog {
+    padding-top: 100px;
+    background-color: var(--white);
+}
+
+.blog .tiles {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 64px;
+}
+
+.blog .tile a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog .top {
+    height: 240px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+    background-size: cover;
+    background-position: center;
+    border: solid 1px var(--light-blue-2);
+    border-radius: 16px 16px 0 0;
+}
+
+.blog-1 {
+    background: url('/public/blog/img/blog-1.webp');
+}
+
+.blog-2 {
+    background: url('/public/blog/img/blog-2.webp');
+}
+
+.blog-3 {
+    background: url('/public/blog/img/blog-3.webp');
+}
+
+.blog-4 {
+    background: url('/public/blog/img/blog-4.webp');
+}
+
+.blog .bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border: solid 1px var(--light-blue-2);
+    border-radius: 0 0 16px 16px;
+}
+
+.blog .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.blog .date {
+    font-size: 20px;
+    color: var(--dark-grey);
+}
+
+/* Пост */
+
+.post {
+    padding-top: 100px;
+    background-color: var(--white);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--dark-night);
 }
 
-.contacts .wrapper {
+.footer .container {
     display: flex;
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 64px 0;
+    max-width: 1280px;
+}
+
+.footer h2 {
+    font-size: 40px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .contacts h2 {
-    font-size: 40px;
-    color: var(--white);
-    padding-top: 16px;
+    color: var(--dark-grey);
     white-space: nowrap;
 }
 
-.contacts h3 {
+.contacts .subheader {
     font-size: 20px;
-    text-align: left;
-    color: var(--white);
+    color: var(--dusty-black);
     padding: 0;
 }
 
@@ -612,7 +752,6 @@ th {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    margin: 24px 0;
 }
 
 .contacts .row img {
@@ -626,26 +765,30 @@ th {
     color: var(--white);
 }
 
-.contacts .quick-form {
+.quick-form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     padding: 16px;
     background-color: var(--light-black);
     border: solid 1px var(--dark-grey);
     border-radius: 16px;
-    margin: 0 16px;
 }
 
-.contacts .quick-form div {
+.quick-form h2 {
+    color: var(--heavenly);
+}
+
+.quick-form div {
     padding: 16px 0 32px;
 }
 
-.contacts .quick-form button {
+.quick-form button {
     margin: 0 auto 16px;
 }
 
-.contacts .input, .contacts .textarea {
+.quick-form .input,
+.quick-form .textarea {
     width: 100%;
     font-size: 24px;
     color: var(--dark-grey);
@@ -656,21 +799,21 @@ th {
     margin: 8px 0;
 }
 
-.contacts input::placeholder, .contacts textarea::placeholder {
+.quick-form input::placeholder,
+.quick-form textarea::placeholder {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 24px;
     color: var(--dark-grey);
 }
 
-.contacts .checkbox {
+.quick-form .checkbox {
     
 }
 
-/* Footer */
-.footer {
+.bottombar {
     display: flex;
     justify-content: space-between;
-    padding: 32px;
+    padding: 16px;
     background-color: var(--pure-black);
 }
 
@@ -680,7 +823,7 @@ th {
 
 /* Планшетная версия */
 
-@media (max-width: 1080px) {
+@media (max-width: 1023px) {
 
     /* Наши услуги */
     
@@ -702,20 +845,20 @@ th {
         display: flex;
     }
 
-    /* Примеры наших работ */
+    /* Примеры наших работ, Блог */
 
-    .portfolio .tiles {
+    .portfolio .tiles,
+    .blog .tiles {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 /* Мобильная версия */
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
 
     h1 {
         font-size: 32px;
-        max-width: 100%;
     }
 
     h2 {
@@ -723,7 +866,7 @@ th {
     }
 
     h3 {
-        font-size: 13px;
+        font-size: 18px;
     }
     
     table {
@@ -754,7 +897,12 @@ th {
         width: 100%;
         font-size: 18px;
     }
-    
+
+    .comment,
+    .subheader {
+        font-size: 13px;
+    }
+
     /* Шапка */
     
     .nav {
@@ -792,45 +940,56 @@ th {
         display: none;
     }
     
-    .burger, #call-us-mobile {
+    .burger,
+    #call-us-mobile {
         display: flex;
     }
 
     /* Основной контент */
 
     .section {
-        padding: 32px 16px;
+        scroll-margin-top: 64px;
+        padding: 0 16px 48px;
+        gap: 16px;
     }
 
     /* Первый экран */
     
-    .first-screen .container {
-        padding: 64px 16px 16px;
-        gap: 16px;
+    .hero {
+        margin: 64px 0 0;
     }
     
-    .first-screen .text {
-        font-size: 15px;
+    .hero .container {
+        gap: 0;
     }
 
-    .first-screen .buttons {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero .subheader {
+        font-size: 15px;
+        padding: 24px 0;
+    }
+
+    .hero .buttons {
         flex-direction: column;
         gap: 16px;
-        padding: 8px 0 24px;
+        padding: 0 0 64px;
     }
 
-    .first-screen .rates {
+    .hero .rates {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         padding: 0;
     }
 
-    .first-screen .rate {
+    .hero .rate {
         gap: 8px;
         padding: 8px;
         font-size: 24px;
     }
 
-    .first-screen .rate span {
+    .hero .rate span {
         font-size: 12px;
     }
 
@@ -850,14 +1009,9 @@ th {
         border-radius: 16px;
     }
 
-    .services .tile .title {
-        font-size: 18px;
+    .services .tile h3 {
+        font-size: 20px;
         padding: 8px 0;
-    }
-
-    .services .tile .description {
-        font-size: 12px;
-        line-height: 1.4;
     }
 
     /* Стоисмость сервиса */
@@ -918,41 +1072,42 @@ th {
         width: 48px;
     }
 
-    .how-it-works .title {
+    .how-it-works .step h3 {
         font-size: 18px;
+        text-align: left;
         padding: 8px 0;
     }
 
-    .how-it-works .description {
+    .how-it-works .step .comment {
         font-size: 13px;
+        text-align: left;
     }
 
     /* Отзывы клиентов */
 
-    .feedback .reviews {
+    .feedback .tiles {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 16px;
     }
 
-    .feedback .review {
+    .feedback .tile {
         padding: 16px;
     }
 
-    .feedback .review img {
+    .feedback .tile img {
         width: 96px;
     }
 
-    .feedback .text {
-        font-size: 13px;
+    .feedback .comment {
         padding: 16px 0;
     }
 
-    .feedback .signature {
+    .feedback .customer {
         font-size: 12px;
         padding: 8px 0;
     }
 
-    .feedback .signature span {
+    .feedback .customer span {
         font-size: 12px;
     }
 
@@ -963,34 +1118,57 @@ th {
         padding: 16px;
     }
 
-    .faq .question {
-        font-size: 13px;
+    .faq h3 {
         margin-bottom: 16px;
     }
 
-    .faq .answer {
-        font-size: 12px;
+    /* Промокод */
+
+    .ticket {
+        font-size: 32px;
+        gap: 8px;
+        padding: 16px;
+        border-radius: 16px;
     }
 
-    /* Контакты и форма */
+    .ticket img {
+        width: 56px;
+    }
 
-    .contacts .wrapper {
+    /* Блог */
+
+    .blog {
+        padding-top: 64px;
+    }
+
+    .blog .tiles {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    /* Footer */
+
+    .footer .container {
         flex-direction: column;
+        gap: 16px;
+        padding: 48px 16px;
     }
 
-    .contacts h2 {
-        font-size: 20px;
-        padding-top: 8px;
+    .footer h2 {
+        font-size: 28px;
     }
 
-    .contacts h3 {
+    .contacts {
+        gap: 16px;
+    }
+
+    .contacts .subheader {
         font-size: 12px;
     }
 
     .contacts .row {
         font-size: 12px;
-        gap: 16px;
-        margin: 16px 0;
+        gap: 12px;
     }
 
     .contacts .row img {
@@ -1001,22 +1179,17 @@ th {
         padding-top: 8px;
     }
 
-    .contacts .quick-form {
-        margin: 0;
-    }
-
-    .contacts .input, .contacts .textarea {
+    .quick-form .input, .contacts .textarea {
         font-size: 18px;
     }
 
-    .contacts input::placeholder, .contacts textarea::placeholder {
+    .quick-form input::placeholder, .contacts textarea::placeholder {
         font-size: 18px;
     }
 
-    /* Footer */
-
-    .footer {
+    .bottombar {
         font-size: 12px;
-        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
     }
 }

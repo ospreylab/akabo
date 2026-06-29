@@ -55,11 +55,11 @@
     <main>
         <?php if (isset($page) || isset($post)): ?>
             <?php
-            print('page = ' . $page . PHP_EOL);
-            print('post = ' . $post . PHP_EOL);
+            if (isset($page)) include($page . '.php');
+            if (isset($post)) include('blog/' . $post . '.php');
             ?>
         <?php else: ?>
-        <section class="section first-screen">
+        <section class="section hero">
             <div class="container">
                 <a href="tel:+79673409376">
                     <button type="button" id="call-us-mobile" class="btn quaternary-btn">
@@ -69,7 +69,7 @@
                 <h1>
                     Сервис и ремонт вашего септика<br><span>в срок и без ошибок</span>
                 </h1>
-                <p class="text">
+                <p class="subheader">
                     Выезжаем на ваш объект, проводим диагностику, выполняем ремонт или сервис локальных очистных сооружений в день выезда. Онлайн-заявка – выезд за 48 часов.
                 </p>
                 <div class="buttons">
@@ -94,24 +94,24 @@
             <h2>
                 Наши услуги
             </h2>
-            <h3>
+            <p class="subheader">
                 Профессиональный ремонт и сервис локальных очистных сооружений любой конструкции
-            </h3>
+            </p>
             <div class="tiles">
                 <div class="tile">
                     <img src="/assets/img/drop.svg">
-                    <p class="title">Диагностика</p>
-                    <p class="description">Тестирование всех компонентов вашего очистного сооружение и комплексная проверка функционирования.</p>
+                    <h3>Диагностика</h3>
+                    <p class="comment">Тестирование всех компонентов вашего очистного сооружение и комплексная проверка функционирования.</p>
                 </div>
                 <div class="tile">
                     <img src="/assets/img/drop.svg">
-                    <p class="title">Ремонт и апгрейд</p>
-                    <p class="description">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
+                    <h3>Ремонт и апгрейд</h3>
+                    <p class="comment">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
                 </div>
                 <div class="tile">
                     <img src="/assets/img/drop.svg">
-                    <p class="title">Сервис</p>
-                    <p class="description">Выполнение регламентных операций по очистке вашего септика, сезонная консервация и ввод в эксплуатацию.</p>
+                    <h3>Сервис</h3>
+                    <p class="comment">Выполнение регламентных операций по очистке вашего септика, сезонная консервация и ввод в эксплуатацию.</p>
                 </div>
             </div>
         </section>
@@ -120,9 +120,9 @@
             <h2>
                 Цены на сервис
             </h2>
-            <h3>
+            <p class="subheader">
                 Пожалуй, самое привлекательное предложение в Ленинградской области
-            </h3>
+            </p>
             <table id="table-wide">
                 <thead class="thead">
                     <tr>
@@ -131,16 +131,16 @@
                 </thead>
                 <tbody>
                     <tr class="odd">
-                        <td class="al">Стандарт</td><td>3–8</td><td><b>6&nbsp;500&nbsp;руб.</b></td><td><b>7&nbsp;500&nbsp;руб.</b></td><td class="ar"><b>9&nbsp;000&nbsp;руб.</b></td>
+                        <td class="al">Стандарт</td><td>3–8</td><td><b>6&nbsp;500&nbsp;₽</b></td><td><b>7&nbsp;500&nbsp;₽</b></td><td class="ar"><b>9&nbsp;000&nbsp;₽</b></td>
                     </tr>
                     <tr class="even">
-                        <td class="al">Стандарт</td><td>9–12</td><td><b>7&nbsp;000&nbsp;руб.</b></td><td><b>8&nbsp;000&nbsp;руб.</b></td><td class="ar"><b>9&nbsp;500&nbsp;руб.</b></td>
+                        <td class="al">Стандарт</td><td>9–12</td><td><b>7&nbsp;000&nbsp;₽</b></td><td><b>8&nbsp;000&nbsp;₽</b></td><td class="ar"><b>9&nbsp;500&nbsp;₽</b></td>
                     </tr>
                     <tr class="odd">
-                        <td class="al">Удлиненная</td><td>3–8</td><td><b>7&nbsp;500&nbsp;руб.</b></td><td><b>8&nbsp;500&nbsp;руб.</b></td><td class="ar"><b>10&nbsp;000&nbsp;руб.</b></td>
+                        <td class="al">Удлиненная</td><td>3–8</td><td><b>7&nbsp;500&nbsp;₽</b></td><td><b>8&nbsp;500&nbsp;₽</b></td><td class="ar"><b>10&nbsp;000&nbsp;₽</b></td>
                     </tr>
                     <tr class="even">
-                        <td class="al">Удлиненная</td><td>9–12</td><td><b>8&nbsp;000&nbsp;руб.</b></td><td><b>9&nbsp;000&nbsp;руб.</b></td><td class="ar"><b>10&nbsp;500&nbsp;руб.</b></td>
+                        <td class="al">Удлиненная</td><td>9–12</td><td><b>8&nbsp;000&nbsp;₽</b></td><td><b>9&nbsp;000&nbsp;₽</b></td><td class="ar"><b>10&nbsp;500&nbsp;₽</b></td>
                     </tr>
                 </tbody>
                 <tfoot class="tfoot">
@@ -152,21 +152,21 @@
             <table id="table-narrow">
                 <thead class="thead">
                     <tr>
-                        <th class="al tl">Размер станции</th><th>Кол-во чел.</th><th class="ar tr">Стоимость, руб.</th>
+                        <th class="al tl">Размер станции</th><th>Кол-во чел.</th><th class="ar tr">Стоимость</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="odd">
-                        <td class="al">Стандарт</td><td>3–8</td><td class="ar"><b>6&nbsp;500*</b></td>
+                        <td class="al">Стандарт</td><td>3–8</td><td class="ar"><b>6&nbsp;500&nbsp;₽*</b></td>
                     </tr>
                     <tr class="even">
-                        <td class="al">Стандарт</td><td>9–12</td><td class="ar"><b>7&nbsp;000*</b></td>
+                        <td class="al">Стандарт</td><td>9–12</td><td class="ar"><b>7&nbsp;000&nbsp;₽*</b></td>
                     </tr>
                     <tr class="odd">
-                        <td class="al">Удлиненная</td><td>3–8</td><td class="ar"><b>7&nbsp;500*</b></td>
+                        <td class="al">Удлиненная</td><td>3–8</td><td class="ar"><b>7&nbsp;500&nbsp;₽*</b></td>
                     </tr>
                     <tr class="even">
-                        <td class="al">Удлиненная</td><td>9–12</td><td class="ar"><b>8&nbsp;000*</b></td>
+                        <td class="al">Удлиненная</td><td>9–12</td><td class="ar"><b>8&nbsp;000&nbsp;₽*</b></td>
                     </tr>
                 </tbody>
                 <tfoot class="tfoot">
@@ -184,9 +184,9 @@
             <h2>
                 Примеры наших работ
             </h2>
-            <h3>
+            <p class="subheader">
                 Ремонт и обслуживание очистных сооружений на территории Ленинградской области
-            </h3>
+            </p>
             <div class="tiles">
                 <div class="tile">
                     <div class="top portfolio-1">
@@ -195,7 +195,7 @@
                     </div>
                     <div class="bottom">
                         <p class="feature">Стоимость работ</p>
-                        <p class="value">7&nbsp;500 руб.</p>
+                        <p class="value">7&nbsp;500&nbsp;₽</p>
                     </div>
                 </div>
                 <div class="tile">
@@ -205,7 +205,7 @@
                     </div>
                     <div class="bottom">
                         <p class="feature">Стоимость работ</p>
-                        <p class="value">25&nbsp;000 руб.</p>
+                        <p class="value">25&nbsp;000&nbsp;₽</p>
                     </div>
                 </div>
                 <div class="tile">
@@ -215,7 +215,7 @@
                     </div>
                     <div class="bottom">
                         <p class="feature">Стоимость работ</p>
-                        <p class="value">4&nbsp;500 руб.</p>
+                        <p class="value">4&nbsp;500&nbsp;₽</p>
                     </div>
                 </div>
             </div>
@@ -225,29 +225,29 @@
             <h2>
                 Как это работает
             </h2>
-            <h3>
+            <p class="subheader">
                 Простой и прозрачный процесс от заявки до результата
-            </h3>
+            </p>
             <div class="steps">
                 <div class="step">
                     <img src="/assets/img/icon-1.svg">
-                    <p class="title">Заявка онлайн или по телефону</p>
-                    <p class="description">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
+                    <h3>Заявка онлайн или по телефону</h3>
+                    <p class="comment">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
                 </div>
                 <div class="step">
                     <img src="/assets/img/icon-2.svg">
-                    <p class="title">Подтверждение</p>
-                    <p class="description">Наш специалист свяжется с вами и подтвердит время визита.</p>
+                    <h3>Подтверждение</h3>
+                    <p class="comment">Наш специалист свяжется с вами и подтвердит время визита.</p>
                 </div>
                 <div class="step">
                     <img src="/assets/img/icon-3.svg">
-                    <p class="title">Выезд сервисного инженера</p>
-                    <p class="description">Инженер приедет в согласованное время со всем оборудованием.</p>
+                    <h3>Выезд сервисного инженера</h3>
+                    <p class="comment">Инженер приедет в согласованное время со всем оборудованием.</p>
                 </div>
                 <div class="step">
                     <img src="/assets/img/icon-4.svg">
-                    <p class="title">Готовый результат</p>
-                    <p class="description">Вы получаете рабочую систему в день приезда специалиста</p>
+                    <h3>Готовый результат</h3>
+                    <p class="comment">Вы получаете рабочую систему в день приезда специалиста</p>
                 </div>
             </div>
 
@@ -260,25 +260,25 @@
             <h2>
                 Отзывы клиентов
             </h2>
-            <h3>
+            <p class="subheader">
                 Что говорят о нас наши клиенты
-            </h3>
-            <div class="reviews">
-                <div class="review">
+            </p>
+            <div class="tiles">
+                <div class="tile">
                     <img src="/assets/img/rating-5.svg">
-                    <p class="text">
+                    <p class="comment">
                         «Сотрудничаем более трёх лет. Мастера всегда приезжают вовремя. Нареканий по работе станций после обслуживания нет. В случае возникновения аварийной ситуации реагируют оперативно».
                     </p>
-                    <p class="signature">
+                    <p class="customer">
                         Алексей Субботин<br><span>Управляющий базой отдыха «Заозерье»</span>
                     </p>
                 </div>
-                <div class="review">
+                <div class="tile">
                     <img src="/assets/img/rating-5.svg">
-                    <p class="text">
+                    <p class="comment">
                         «Заказываю регулярное обслуживание септика у этих мастеров. Бережно относятся к участку и мои насаждениям. Дают полезные советы по эксплуатации станции. Рекомендую как надёжного партнера!».
                     </p>
-                    <p class="signature">
+                    <p class="customer">
                         Марина Разумовская<br><span>Владелец загородного дома в КП «Северная долина»</span>
                     </p>
                 </div>
@@ -289,80 +289,58 @@
             <h2>
                 Часто задаваемые вопросы
             </h2>
-            <h3>
+            <p class="subheader">
                 Узнайте то, чем мы выгодно отличаемся от конкурентов
-            </h3>
+            </p>
             <div class="accordion">
-                
-                <p class="question">
+                <h3>
                     Как быстро приедет мастер?
                     <img src="/assets/img/accordion-opened.svg">
-                </p>
-                <p class="answer">
+                </h3>
+                <p class="comment">
                     Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
                 </p>
             </div>
             <div class="accordion">
-                <p class="question">
+                <h3>
                     Какая гарантия на работу?
                     <img src="/assets/img/accordion-opened.svg">
-                </p>
-                <p class="answer">
+                </h3>
+                <p class="comment">
                     Гарантия на работу и оборудование составляет один год. 
                 </p>
             </div>
             <div class="accordion">
-                <p class="question">
+                <h3>
                     Работаете ли вы с базами отдыха?
                     <img src="/assets/img/accordion-opened.svg">
-                </p>
-                <p class="answer">
+                </h3>
+                <p class="comment">
                     Да, работаем. Есть возможность оплаты по безнальчному расчету. 
                 </p>
             </div>
             <div class="accordion">
-                <p class="question">
+                <h3>
                     Работаете ли за пределами Ленинградской области?
                     <img src="/assets/img/accordion-opened.svg">
-                </p>
-                <p class="answer">
+                </h3>
+                <p class="comment">
                     По договоренности возможен выезд в соседние регионы.
                 </p>
             </div>
         </section>
 
-        <section id="contacts" class="section contacts">
-            <div class="wrapper">
-                <div>
-                    <h2>Свяжитесь с нами</h2>
-                    <h3>Готовы обсудить ваш проект и рассчитать стоимость выезда. Свяжитесь с нами удобным способом.</h3>
-                    <div class="row">
-                        <img src="/assets/img/icon-phone.svg"><p>Телефон<span>+7 (967) 340-93-76</span></p>
-                    </div>
-                    <div class="row">
-                        <img src="/assets/img/icon-email.svg"><p>Email<span>zakaz@akabo.ru</span></p>
-                    </div>
-                    <div class="row">
-                        <img src="/assets/img/icon-geo.svg"><p>Адрес<span>г. Санкт-Петербург</span></p>
-                    </div>
-                    <div class="row">
-                        <img src="/assets/img/icon-clock.svg"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
-                    </div>
-                </div>
-                <div class="quick-form">
-                    <h2>Быстрая заявка</h2>
-                    <form action="/submit_form.php" method="POST" enctype="multipart/form-data">
-                        <input class="input" name="customer" placeholder="Ваше имя" required>
-                        <input class="input" name="phone" placeholder="Телефон" required>
-                        <input class="input" name="email" placeholder="Email">
-                        <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
-                        <div>
-                            <input class="checkbox" type="checkbox" required>
-                            <span>Я согласен(-на) на обработку <a class="text-link" href="/upload/pdp_agreement.pdf">персональных данных</a></span>
-                        </div>
-                        <button type="submit" class="btn primary-btn">Отправить заявку</button>
-                    </form>
-                </div>
+        <section id="coupon" class="section coupon">
+            <h2>
+                Промокод дня
+            </h2>
+            <p class="subheader">
+                Загляните сюда в день выезда мастера и получите дополнительную скидку 500&nbsp;₽
+            </p>
+            <div class="ticket">
+                <img src="/assets/img/rating-3.svg">
+                <p id="code">СЕПТИК24</p>
+                <img src="/assets/img/rating-3.svg">
             </div>
         </section>
         <?php endif; ?>
@@ -375,19 +353,51 @@
                 <p>Мы свяжемся с вами в ближайшее время.</p>
             <?php else:?>
                 <h2>Ошибка отправки</h2>
-                <p>Пожалуста, свяжитесь с нами <a class="text-link" href="tel:+79673409376">+7 (967) 340-93-76</a></p>
+                <p>Пожалуста, свяжитесь с нами <a class="url" href="tel:+79673409376">+7 (967) 340-93-76</a></p>
             <?php endif; ?>
             <button class="btn primary-btn" onclick="closeModal()">Закрыть</button>
         </div>
     </main>
 
-    <footer class="footer">
-            <p class="text">
-                © 2020-26 Акабо
-            </p>
-            <p class="text">
-                Сделано в студии <a class="text-link" href="https://ospreylab.ru">ospreylab</a>
-            </p>      
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="contacts">
+                <h2>Свяжитесь с нами</h2>
+                <p class="subheader">
+                    Готовы обсудить ваш проект и рассчитать стоимость выезда. Свяжитесь с нами удобным способом.
+                </p>
+                <div class="row">
+                    <img src="/assets/img/icon-phone.svg"><p>Телефон<span>+7 (967) 340-93-76</span></p>
+                </div>
+                <div class="row">
+                    <img src="/assets/img/icon-email.svg"><p>Email<span>zakaz@akabo.ru</span></p>
+                </div>
+                <div class="row">
+                    <img src="/assets/img/icon-geo.svg"><p>Адрес<span>г. Санкт-Петербург</span></p>
+                </div>
+                <div class="row">
+                    <img src="/assets/img/icon-clock.svg"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
+                </div>
+            </div>
+            <div class="quick-form">
+                <h2>Быстрая заявка</h2>
+                <form action="/submit_form.php" method="POST" enctype="multipart/form-data">
+                    <input class="input" name="customer" placeholder="Ваше имя" required>
+                    <input class="input" name="phone" placeholder="Телефон" required>
+                    <input class="input" name="email" placeholder="Email">
+                    <textarea class="textarea" name="task" placeholder="Опишите задачу"></textarea>
+                    <div>
+                        <input class="checkbox" type="checkbox" required>
+                        <span>Я согласен(-на) на обработку <a class="url" href="/upload/pdp_agreement.pdf">персональных данных</a></span>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="bottombar">
+            <p>© 2020-<?= date('Y') ?> Акабо. Ремонт и сервис септиков в ЛО.</p>
+            <p>Сделано в студии <a class="url" href="https://ospreylab.ru">ospreylab</a></p>
+        </div>
     </footer>
 
     <script src="assets/script.js"></script>
