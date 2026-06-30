@@ -287,9 +287,11 @@ th {
 /* Основной контент */
 
 .section {
-    scroll-margin-top: 100px;
-    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
     gap: 32px;
+    padding: 64px 32px;
+    scroll-margin-top: 100px;
 }
 
 .section h2 {
@@ -301,10 +303,15 @@ th {
     padding: 0 0 40px;
 }
 
+.hero,
+.blog,
+.post {
+    margin: 100px 0 0;
+}
+
 /* Первый экран */
 
 .hero {
-    margin: 100px 0 0;
     padding: 64px 0;
     background-image: url('/assets/img/background.webp');
     background-size: cover;
@@ -575,15 +582,24 @@ th {
 /* Часто задаваемые вопросы */
 
 .faq {
+    align-items: center;
     background-color: var(--white);
 }
 
+.faq .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1000px;
+}
+
 .faq .accordion {
-    max-width: 1200px;
-    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
     border: solid 1px var(--light-blue-2);
     border-radius: 16px;
-    padding: 24px;
 }
 
 .faq .accordion img {
@@ -596,13 +612,12 @@ th {
     justify-content: space-between;
     align-items: flex-start;
     color: var(--black);
-    margin-bottom: 16px;
 }
 
 /* Промокод */
 
 .coupon {
-    text-align: center;
+    align-items: center;
     background-color: var(--heavenly);
 }
 
@@ -618,12 +633,12 @@ th {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.25;
-    display: inline-flex;
+    display: flex;
     gap: 16px;
     padding: 32px;
-    text-align: center;
     color: var(--heavenly);
     background-color: var(--white);
+    border: solid 1px var(--light-blue-2);
     border-radius: 32px;
 }
 
@@ -632,17 +647,16 @@ th {
     height:  auto;
 }
 
-/* Блог */
+/* Блог, Пост */
 
 .blog {
-    padding-top: 100px;
     background-color: var(--white);
 }
 
 .blog .tiles {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 64px;
+    gap: 32px;
 }
 
 .blog .tile a {
@@ -653,31 +667,26 @@ th {
 
 .blog .top {
     height: 240px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 12px;
     background-size: cover;
     background-position: center;
     border: solid 1px var(--light-blue-2);
     border-radius: 16px 16px 0 0;
 }
 
-.blog-1 {
-    background: url('/public/blog/img/blog-1.webp');
+.post-1 {
+    background: url('/public/blog/img/post-1.webp');
 }
 
-.blog-2 {
-    background: url('/public/blog/img/blog-2.webp');
+.post-2 {
+    background: url('/public/blog/img/post-2.webp');
 }
 
-.blog-3 {
-    background: url('/public/blog/img/blog-3.webp');
+.post-3 {
+    background: url('/public/blog/img/post-3.webp');
 }
 
-.blog-4 {
-    background: url('/public/blog/img/blog-4.webp');
+.post-4 {
+    background: url('/public/blog/img/post-4.webp');
 }
 
 .blog .bottom {
@@ -690,22 +699,74 @@ th {
     border-radius: 0 0 16px 16px;
 }
 
-.blog .title {
+.blog .tile h2 {
     font-size: 24px;
-    font-weight: 700;
-    color: var(--black);
+    text-align: left;
+    padding: 0
 }
 
-.blog .date {
+.blog .post-date {
     font-size: 20px;
     color: var(--dark-grey);
 }
 
-/* Пост */
-
 .post {
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0 32px 64px;
     background-color: var(--white);
+    max-width: 1280px;
+}
+
+.post .post-date {
+    font-size: 24px;
+    padding: 32px 0 0;
+    text-align: right;
+    width: 100%;
+}
+
+.post h1 {
+    font-size: 48px;
+    text-align: left;
+}
+
+.post .post-img {
+    height: 480px;
+    width: 720px;
+    background-size: cover;
+    background-position: center;
+    border: solid 1px var(--light-blue-2);
+    border-radius: 16px;
+}
+
+.post .post-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.post .post-text h2 {
+    font-size: 36px;
+    text-align: left;
+}
+
+.post .post-text ul,
+.post .post-text ol {
+    padding-left: 64px;
+}
+
+.post .post-text p,
+.post .post-text li {
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 /* Footer */
@@ -850,6 +911,7 @@ th {
     .portfolio .tiles,
     .blog .tiles {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
     }
 }
 
@@ -953,11 +1015,13 @@ th {
         gap: 16px;
     }
 
-    /* Первый экран */
-    
-    .hero {
+    .hero,
+    .blog,
+    .post {
         margin: 64px 0 0;
     }
+
+    /* Первый экран */
     
     .hero .container {
         gap: 0;
@@ -1114,12 +1178,8 @@ th {
     /* Часто задаваемые вопросы */
 
     .faq .accordion {
-        margin: 16px auto;
+        gap: 12px;
         padding: 16px;
-    }
-
-    .faq h3 {
-        margin-bottom: 16px;
     }
 
     /* Промокод */
@@ -1135,15 +1195,69 @@ th {
         width: 56px;
     }
 
-    /* Блог */
-
-    .blog {
-        padding-top: 64px;
-    }
+    /* Блог, Пост */
 
     .blog .tiles {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 8px;
+        gap: 16px;
+    }
+
+    .blog .top {
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+        border: solid 1px var(--light-blue-2);
+        border-radius: 16px 16px 0 0;
+    }
+
+    .blog .bottom {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .blog .tile h2 {
+        font-size: 18px;
+    }
+
+    .blog .post-date {
+        font-size: 12px;
+    }
+
+    .post .container {
+        gap: 16px;
+        padding: 0 16px 48px;
+    }
+
+    .post .post-date {
+        font-size: 13px;
+        padding: 16px 0 0;
+    }
+
+    .post h1 {
+        font-size: 28px;
+    }
+
+    .post .post-img {
+        height: 240px;
+        width: 100%;
+    }
+
+    .post .post-text {
+        gap: 16px;
+    }
+
+    .post .post-text h2 {
+        font-size: 18px;
+    }
+
+    .post .post-text ul,
+    .post .post-text ol {
+        padding-left: 32px;
+    }
+
+    .post .post-text p,
+    .post .post-text li {
+        font-size: 15px;
     }
 
     /* Footer */
@@ -1179,11 +1293,13 @@ th {
         padding-top: 8px;
     }
 
-    .quick-form .input, .contacts .textarea {
+    .quick-form .input,
+    .quick-form .textarea {
         font-size: 18px;
     }
 
-    .quick-form input::placeholder, .contacts textarea::placeholder {
+    .quick-form input::placeholder,
+    .quick-form textarea::placeholder {
         font-size: 18px;
     }
 

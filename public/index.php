@@ -292,41 +292,43 @@
             <p class="subheader">
                 Узнайте то, чем мы выгодно отличаемся от конкурентов
             </p>
-            <div class="accordion">
-                <h3>
-                    Как быстро приедет мастер?
-                    <img src="/assets/img/accordion-opened.svg">
-                </h3>
-                <p class="comment">
-                    Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
-                </p>
-            </div>
-            <div class="accordion">
-                <h3>
-                    Какая гарантия на работу?
-                    <img src="/assets/img/accordion-opened.svg">
-                </h3>
-                <p class="comment">
-                    Гарантия на работу и оборудование составляет один год. 
-                </p>
-            </div>
-            <div class="accordion">
-                <h3>
-                    Работаете ли вы с базами отдыха?
-                    <img src="/assets/img/accordion-opened.svg">
-                </h3>
-                <p class="comment">
-                    Да, работаем. Есть возможность оплаты по безнальчному расчету. 
-                </p>
-            </div>
-            <div class="accordion">
-                <h3>
-                    Работаете ли за пределами Ленинградской области?
-                    <img src="/assets/img/accordion-opened.svg">
-                </h3>
-                <p class="comment">
-                    По договоренности возможен выезд в соседние регионы.
-                </p>
+            <div class="container">
+                <div class="accordion">
+                    <h3>
+                        Как быстро приедет мастер?
+                        <img src="/assets/img/accordion-opened.svg">
+                    </h3>
+                    <p class="comment">
+                        Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
+                    </p>
+                </div>
+                <div class="accordion">
+                    <h3>
+                        Какая гарантия на работу?
+                        <img src="/assets/img/accordion-opened.svg">
+                    </h3>
+                    <p class="comment">
+                        Гарантия на работу и оборудование составляет один год. 
+                    </p>
+                </div>
+                <div class="accordion">
+                    <h3>
+                        Работаете ли вы с базами отдыха?
+                        <img src="/assets/img/accordion-opened.svg">
+                    </h3>
+                    <p class="comment">
+                        Да, мы работаем с юридическими лицам. Есть возможность оплаты по безналичному расчету. 
+                    </p>
+                </div>
+                <div class="accordion">
+                    <h3>
+                        Работаете ли за пределами Ленинградской области?
+                        <img src="/assets/img/accordion-opened.svg">
+                    </h3>
+                    <p class="comment">
+                        По договоренности возможен выезд в соседние регионы.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -339,7 +341,7 @@
             </p>
             <div class="ticket">
                 <img src="/assets/img/rating-3.svg">
-                <p id="code">СЕПТИК24</p>
+                <span id="code">СЕПТИК24</span>
                 <img src="/assets/img/rating-3.svg">
             </div>
         </section>
