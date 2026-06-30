@@ -1,4 +1,4 @@
 RewriteEngine On
 
-RewriteCond %{REQUEST_URI}  !(\.ico|\.png|\.svg|\.webp|\.jpg|\.jpeg|\.gif|\.css|\.js|\.zip|\.pdf)$
+RewriteCond %{REQUEST_URI}  !(\.ico|\.png|\.svg|\.webp|\.jpg|\.jpeg|\.gif|\.css|\.js|\.txt|\.html|\.xml|\.zip|\.pdf)$
 RewriteRule (.*) router.php [QSA,L]
