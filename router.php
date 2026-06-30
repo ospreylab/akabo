@@ -3,8 +3,6 @@ get('/', 'public/index.php');
 
 get('/index.php', 'public/index.php');
 
-get('/yandex_be6ce691ec64592f.html', 'public/yandex_be6ce691ec64592f.html');
-
 post('/submit_form.php', 'public/submit_form.php');
 
 get('/blog/$post', 'public/index.php');
