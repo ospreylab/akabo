@@ -1,3 +1,13 @@
+<script>
+    const title = 'Блог компании Акабо: Полезная информация для самостоятельного обслуживания вашего очистного сооружения';
+    const description = 'Полезная информация для самостоятельного ремонта вашего очистного сооружения. Пошаговые инструкции для обслуживания септика своими руками.';
+
+    document.title = title;
+    const metaTag = document.querySelector('meta[name="description"]');
+    if (metaTag) {
+        metaTag.setAttribute('content', description);
+    }
+</script>
 <section class="section blog">
     <h1>
         Блог

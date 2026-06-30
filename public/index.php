@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Акабо - Сервис и ремонт вашего септика</title>
+    <title>Акабо. Сервис и ремонт вашего септика в срок и без ошибок</title>
+    <meta name="description" content="Выезжаем на ваш объект, проводим диагностику, выполняем ремонт или сервис локальных очистных сооружений в день выезда. Онлайн-заявка – выезд за 48 часов.">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css" type="text/css" media="screen, projection">
     <!-- Yandex.Metrika counter -->
