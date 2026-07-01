@@ -606,7 +606,7 @@ th {
 }
 
 .faq .accordion:hover {
-    background: var(--light-blue-1);
+    background: var(--light-grey);
 }
 
 .faq .accordion h3 {
