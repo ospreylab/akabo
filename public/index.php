@@ -320,7 +320,7 @@ if (isset($slug)) {
                 <div class="accordion">
                     <h3>
                         Как быстро приедет мастер?
-                        <img src="/assets/img/accordion-opened.svg">
+                        <img src="/assets/img/accordion-closed.svg">
                     </h3>
                     <p class="comment">
                         Стандартный срок выезда — 24–48 часов с момента подтверждения заявки. По срочным заказам возможен выезд в день обращения.
@@ -329,7 +329,7 @@ if (isset($slug)) {
                 <div class="accordion">
                     <h3>
                         Какая гарантия на работу?
-                        <img src="/assets/img/accordion-opened.svg">
+                        <img src="/assets/img/accordion-closed.svg">
                     </h3>
                     <p class="comment">
                         Гарантия на работу и оборудование составляет один год. 
@@ -338,7 +338,7 @@ if (isset($slug)) {
                 <div class="accordion">
                     <h3>
                         Работаете ли вы с базами отдыха?
-                        <img src="/assets/img/accordion-opened.svg">
+                        <img src="/assets/img/accordion-closed.svg">
                     </h3>
                     <p class="comment">
                         Да, мы работаем с юридическими лицам. Есть возможность оплаты по безналичному расчету. 
@@ -347,7 +347,7 @@ if (isset($slug)) {
                 <div class="accordion">
                     <h3>
                         Работаете ли за пределами Ленинградской области?
-                        <img src="/assets/img/accordion-opened.svg">
+                        <img src="/assets/img/accordion-closed.svg">
                     </h3>
                     <p class="comment">
                         По договоренности возможен выезд в соседние регионы.
@@ -474,6 +474,16 @@ if (isset($slug)) {
                 burgerImg.src = iconMenuClosed;
                 isMenuOpened = false;
             }
+        });
+
+        // Открытие/закрытие аккордеона
+        document.querySelectorAll('.accordion').forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                
+                const img = this.querySelector('h3 img');
+                
+            });
         });
 
         <?php if (isset($_GET['result'])): ?>

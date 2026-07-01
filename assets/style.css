@@ -601,18 +601,40 @@ th {
     padding: 24px;
     border: solid 1px var(--light-blue-2);
     border-radius: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.faq .accordion:hover {
+    background: var(--light-grey);
+}
+
+.faq .accordion h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--black);
+    user-select: none;
 }
 
 .faq .accordion img {
     width: 36px;
     height: auto;
+    transition: transform 0.3s;
 }
 
-.faq h3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    color: var(--black);
+.accordion .comment {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding-top 0.4s ease;
+}
+
+.accordion.active .comment {
+    max-height: 300px;
+}
+
+.accordion.active h3 img {
+    transform: rotate(180deg);
 }
 
 /* Промокод */
