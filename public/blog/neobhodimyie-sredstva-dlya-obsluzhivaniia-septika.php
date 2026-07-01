@@ -1,14 +1,3 @@
-<script>
-    const title = 'Необходимые средства для обслуживания септика';
-    const description = 'Большинство современных станций биологической очистки можно обслуживать без применения ассенизаторской машины. Это очень удобно, т.к. подъезд к септику есть не на каждом участке. Если вы хотите провести обслуживание своими руками понадобится дренажный насос для грязной воды и мойка высокого давления.';
-
-    document.title = title;
-    const metaTag = document.querySelector('meta[name="description"]');
-    if (metaTag) {
-        metaTag.setAttribute('content', description);
-    }
-</script>
-
 <section class="post">
     <div class="container">
         <p class="post-date">17 июня 2026 г.</p>

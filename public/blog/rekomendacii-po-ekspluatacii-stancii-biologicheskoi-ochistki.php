@@ -1,14 +1,3 @@
-<script>
-    const title = 'Рекомендации по эксплуатации станции биологической очистки';
-    const description = 'Как и любое технологическое оборудование, станция биологической очистки требует внимания в процессе эксплуатации. Чтобы избежать проблем и дорогостоящего ремонта необходимо соблюдать ряд правил при использовании очистного сооружения.';
-
-    document.title = title;
-    const metaTag = document.querySelector('meta[name="description"]');
-    if (metaTag) {
-        metaTag.setAttribute('content', description);
-    }
-</script>
-
 <section class="post">
     <div class="container">
         <p class="post-date">24 июня 2026 г.</p>

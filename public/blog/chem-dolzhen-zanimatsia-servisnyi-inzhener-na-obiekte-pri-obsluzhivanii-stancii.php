@@ -1,14 +1,3 @@
-<script>
-    const title = 'Чем должен заниматься сервисный инженер на объекте при обслуживании станции?';
-    const description = 'Рассказываем какие работы выполняет мастер во время сервисного обслуживания станции биологической очистки сточных вод. Понимание этого процесса позволит вам грамотно организовать проведение регламентных работ, сберечь время и денежные средства, а также избежать ненужного стресса, если что-то пойдет не по плану.';
-
-    document.title = title;
-    const metaTag = document.querySelector('meta[name="description"]');
-    if (metaTag) {
-        metaTag.setAttribute('content', description);
-    }
-</script>
-
 <section class="post">
     <div class="container">
         <p class="post-date">15 июня 2026 г.</p>

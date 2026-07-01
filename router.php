@@ -5,7 +5,7 @@ get('/index.php', 'public/index.php');
 
 post('/submit_form.php', 'public/submit_form.php');
 
-get('/blog/$post', 'public/index.php');
+get('/blog/$slug', 'public/index.php');
 
 get('/$page', 'public/index.php');
 
