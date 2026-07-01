@@ -606,7 +606,7 @@ th {
 }
 
 .faq .accordion:hover {
-    background: var(--light-grey);
+    background: var(--light-blue-2);
 }
 
 .faq .accordion h3 {
@@ -790,6 +790,39 @@ th {
 .post .post-text li {
     font-size: 24px;
     line-height: 1.5;
+}
+
+/* Страница с ошибкой */
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 0;
+}
+
+.error .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 48px 128px;
+    background-color: var(--white);
+    max-width: 1280px;
+}
+
+.error h1 {
+    font-size: 48px;
+    text-align: left;
+}
+
+.error .code {
+    font-size: 256px;
+    font-weight: 700;
+    color: var(--heavenly);
+    padding: 32px 64px;
+    border: solid 8px var(--heavenly);
+    border-radius: 32px;
 }
 
 /* Footer */
@@ -1281,6 +1314,28 @@ th {
     .post .post-text p,
     .post .post-text li {
         font-size: 15px;
+    }
+
+    /* Страница с ошибкой */
+
+    .error {
+        margin: 64px 0 0;
+    }
+
+    .error .container {
+        gap: 24px;
+        padding: 24px 24px 48px;
+    }
+    
+    .error h1 {
+        font-size: 28px;
+    }
+    
+    .error .code {
+        font-size: 128px;
+        padding: 16px 32px;
+        border: solid 4px var(--heavenly);
+        border-radius: 16px;
     }
 
     /* Footer */

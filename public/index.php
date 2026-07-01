@@ -14,7 +14,7 @@ if (isset($page) && $page === 'blog') {
 
 // Для постов в блоге
 if (isset($slug)) {
-    $post = service_get_post_by_slug($slug);
+    $post = get_post_by_slug($slug);
     $title = $post['title'];
     $description = $post['description'];
 }
@@ -79,8 +79,8 @@ if (isset($slug)) {
     <main>
         <?php if (isset($page) || isset($post)): ?>
             <?php
-            if (isset($page)) include($page . '.php');
-            if (isset($post)) include('blog/' . $slug . '.php');
+            if (isset($page)) include(is_page_exists('public/' . $page . '.php') ? $page . '.php' : '404.php');
+            if (isset($post)) include(is_post_exists($slug) ? 'blog/' . $slug . '.php' : '404.php');
             ?>
         <?php else: ?>
         <section class="section hero">
