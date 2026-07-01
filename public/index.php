@@ -486,6 +486,9 @@ if (isset($slug)) {
             });
         });
 
+        // Обновление промокода
+        document.getElementById('code').textContent = getCoupon();
+
         <?php if (isset($_GET['result'])): ?>
             openModal();
         <?php endif; ?>
