@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/gde-luchshe-raspolozhit-septic-na-zagorodnom-uchastke">
+                <div class="top post-5"></div>
+                <div class="bottom">
+                    <h2>Где лучше расположить септик на загородном участке?</h2>
+                    <p class="post-date">3 июля 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/pochemu-srabotala-avariinaia-lampa-na-septike">
                 <div class="top post-4"></div>
                 <div class="bottom">
