@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/klassicheskyi-septik-ili-stancia">
+                <div class="top post-6"></div>
+                <div class="bottom">
+                    <h2>Классический септик или станция?</h2>
+                    <p class="post-date">8 июля 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/gde-luchshe-raspolozhit-septic-na-zagorodnom-uchastke">
                 <div class="top post-5"></div>
                 <div class="bottom">
