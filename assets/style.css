@@ -720,6 +720,10 @@ th {
     background: url('/public/blog/img/post-6.webp');
 }
 
+.post-7 {
+    background: url('/public/blog/img/post-7.webp');
+}
+
 .blog .bottom {
     display: flex;
     flex: 1;

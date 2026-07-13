@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/servis-stancii-astra-v-massive-kelkolovo">
+                <div class="top post-7"></div>
+                <div class="bottom">
+                    <h2>Сервис станции Астра 5 в массиве Келколово</h2>
+                    <p class="post-date">13 июля 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/klassicheskyi-septik-ili-stancia">
                 <div class="top post-6"></div>
                 <div class="bottom">
