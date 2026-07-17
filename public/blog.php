@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/servisnoe-obsluzhivanie-i-remont-stancii-evrolos">
+                <div class="top post-8"></div>
+                <div class="bottom">
+                    <h2>Сервисное обслуживание и ремонт станции Евролос Био 4+ в Гатчине</h2>
+                    <p class="post-date">17 июля 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/servis-stancii-astra-v-massive-kelkolovo">
                 <div class="top post-7"></div>
                 <div class="bottom">
