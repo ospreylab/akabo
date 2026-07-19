@@ -129,8 +129,13 @@ if (isset($slug)) {
                 </div>
                 <div class="tile">
                     <img src="/assets/img/drop.svg">
-                    <h3>Ремонт и апгрейд</h3>
+                    <h3>Ремонт</h3>
                     <p class="comment">Замена неисправных компонентов и восстановление работы вашего септика в день выезда. Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/img/drop.svg">
+                    <h3>Апгрейд</h3>
+                    <p class="comment">Установка аварийной сигнализации. Компоненты всех популярных станций в наличии.</p>
                 </div>
                 <div class="tile">
                     <img src="/assets/img/drop.svg">
@@ -169,7 +174,7 @@ if (isset($slug)) {
                 </tbody>
                 <tfoot class="tfoot">
                     <tr>
-                        <td class="al bl br" colspan=5>Вызов ассенизаторской машины оплачивается отдельно</td>
+                        <td class="al bl br" colspan=5>Вызов ассенизаторской машины, если необходим, оплачивается отдельно</td>
                     </tr>
                 </tfoot>
             </table>
