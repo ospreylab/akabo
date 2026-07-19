@@ -936,6 +936,11 @@ th {
     color: var(--dark-grey);
 }
 
+.quick-form input:focus,
+.quick-form textarea:focus {
+    outline: none;
+}
+
 .quick-form .checkbox {
     
 }
