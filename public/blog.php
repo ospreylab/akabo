@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/servis-stancii-biodeka-5-v-poselke-mga">
+                <div class="top post-9"></div>
+                <div class="bottom">
+                    <h2>Сервис станции Биодека 5 в поселке Мга</h2>
+                    <p class="post-date">22 июля 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/servisnoe-obsluzhivanie-i-remont-stancii-evrolos">
                 <div class="top post-8"></div>
                 <div class="bottom">
