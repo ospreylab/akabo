@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/zapah-kanalizacii-v-dome">
+                <div class="top post-10"></div>
+                <div class="bottom">
+                    <h2>Запах канализации в доме и способы его устранения</h2>
+                    <p class="post-date">26 июля 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/servis-stancii-biodeka-5-v-poselke-mga">
                 <div class="top post-9"></div>
                 <div class="bottom">

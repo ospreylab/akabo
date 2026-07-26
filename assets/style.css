@@ -731,6 +731,11 @@ th {
 .post-9 {
     background: url('/public/blog/img/post-9.webp');
 }
+
+.post-10 {
+    background: url('/public/blog/img/post-10.webp');
+}
+
 .blog .bottom {
     display: flex;
     flex: 1;
