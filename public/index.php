@@ -428,6 +428,7 @@ if (isset($slug)) {
                     <img src="/assets/img/icon-clock.svg"><p>Режим работы<span>Пн–Пт: 8:00–20:00, Сб: 9:00–17:00</span></p>
                 </div>
             </div>
+            <!--
             <div class="quick-form">
                 <h2>Быстрая заявка</h2>
                 <form action="/submit_form.php" method="POST" enctype="multipart/form-data">
@@ -442,6 +443,7 @@ if (isset($slug)) {
                     <button type="submit" class="btn primary-btn">Отправить заявку</button>
                 </form>
             </div>
+            -->
         </div>
         <div class="bottombar">
             <p>© 2020-<?= date('Y') ?> Акабо. Ремонт и сервис септиков в ЛО.</p>
