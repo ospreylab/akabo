@@ -260,8 +260,8 @@ if (isset($slug)) {
             <div class="steps">
                 <div class="step">
                     <img src="/assets/img/icon-1.svg">
-                    <h3>Заявка онлайн или по телефону</h3>
-                    <p class="comment">Создайте заявку в личном кабинете, укажите адрес и удобное время.</p>
+                    <h3>Заявка по почте или по телефону</h3>
+                    <p class="comment">Напишите или позвоните нам.</p>
                 </div>
                 <div class="step">
                     <img src="/assets/img/icon-2.svg">
