@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/servis-stancii-topas-5-v-poselke-sosnovo">
+                <div class="top post-11"></div>
+                <div class="bottom">
+                    <h2>Сервис станции Топас-5 в поселке Сосново</h2>
+                    <p class="post-date">03 сентября 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/zapah-kanalizacii-v-dome">
                 <div class="top post-10"></div>
                 <div class="bottom">
