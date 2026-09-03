@@ -7,6 +7,15 @@
     </p>
     <div class="tiles">
         <div class="tile">
+            <a href="/blog/servis-i-remont-stancii-biodeka-5-v-massive-voshod">
+                <div class="top post-12"></div>
+                <div class="bottom">
+                    <h2>Проведение сервисного обслуживания и ремонта станции Биодека-5 в массиве Восход</h2>
+                    <p class="post-date">03 сентября 2026 г.</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile">
             <a href="/blog/servis-stancii-topas-5-v-poselke-sosnovo">
                 <div class="top post-11"></div>
                 <div class="bottom">
